@@ -1,15 +1,15 @@
 # Git Basics for Beginners
 
-## 📖 Overview
+##  Overview
 
 Git is the industry-standard version control system. This guide covers the essential commands you need to start using Git effectively in real projects.
 
-## 🎯 Prerequisites
+##  Prerequisites
 
 - Terminal installed and comfortable with basic commands
 - Git installed (see [Setting Up Development Environment](setting-up-development-environment.md))
 
-## 📋 Core Concepts
+##  Core Concepts
 
 ### What is Git?
 Git tracks changes to your files over time. Think of it like save points in a video game — you can always go back to a previous save if something goes wrong.
@@ -19,7 +19,7 @@ Working Directory → Staging Area → Repository (History)
      (files)          (index)        (.git folder)
 ```
 
-## 📋 Steps
+##  Steps
 
 ### Step 1: Initialize or Clone a Repository
 ```bash
@@ -96,21 +96,21 @@ git show a1b2c3d                # details of a commit
 git blame filename.js           # who changed each line
 ```
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 1. **Committing to main directly** — always use feature branches
 2. **Committing secrets** — add `.env` to `.gitignore` BEFORE the first commit
 3. **`git add .` without `git status` first** — check what you're staging
 4. **Merge conflicts panic** — they're normal, just edit the file to resolve
 
-## ✅ Best Practices
+##  Best Practices
 
 - Commit early, commit often (small commits)
 - Write clear commit messages (imperative mood: "Add feature")
 - Pull before you push
 - Never force push to shared branches
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Commit Message Conventions](../../tips/git/commit-message-conventions.md)
 - [Branch Strategies](../../tips/git/branch-strategies.md)

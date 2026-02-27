@@ -1,12 +1,12 @@
 # Observer Pattern
 
-## 📖 Definition
+##  Definition
 
 The **Observer** pattern defines a one-to-many dependency between objects. When one object (the **subject/publisher**) changes state, all its dependents (**observers/subscribers**) are notified and updated automatically.
 
 Also known as: **Publisher-Subscriber**, **Event Listener**
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Observer decouples the subject from its observers:
 - Event systems (DOM events, Node.js EventEmitter)
@@ -14,7 +14,7 @@ Observer decouples the subject from its observers:
 - Real-time notifications (WebSockets)
 - Stock ticker / news feeds
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Event Emitter (JavaScript)
 ```javascript
@@ -94,7 +94,7 @@ class AlertSystem(Observer):
 
 class Dashboard(Observer):
     def update(self, symbol, price):
-        print(f"📊 Dashboard: {symbol} = ${price:.2f}")
+        print(f" Dashboard: {symbol} = ${price:.2f}")
 
 market = StockMarket()
 market.subscribe(Dashboard())
@@ -102,16 +102,16 @@ market.subscribe(AlertSystem(threshold=150))
 
 market.set_price('AAPL', 145.50)
 market.set_price('AAPL', 152.00)
-# 📊 Dashboard: AAPL = $152.00
-# 🚨 ALERT: AAPL hit $152.00!
+#  Dashboard: AAPL = $152.00
+#  ALERT: AAPL hit $152.00!
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Observer and Pub/Sub are identical"** — In Observer, subjects know their observers. In Pub/Sub, publishers and subscribers are decoupled via a message broker.
 2. **"Observers always receive all events"** — You can filter: observers can check event data and ignore irrelevant updates.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Strategy Pattern](strategy-pattern.md)
 - [Event-Driven Architecture](../architecture/event-driven-architecture.md)

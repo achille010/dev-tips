@@ -1,14 +1,14 @@
 # Shell Scripting Basics
 
-## 🎯 Problem
+##  Problem
 
 You're running the same sequence of commands repeatedly — deploying, building, or setting up your environment. Manual repetition wastes time and introduces human error.
 
-## ✨ Solution
+##  Solution
 
 Write a shell script to automate the sequence. Even basic scripting skills save hours of work.
 
-## 💻 Example
+##  Example
 
 ### Your First Script
 
@@ -54,7 +54,7 @@ deploy() {
 
     rsync -avz --delete dist/ user@server.com:$APP_DIR/
     ssh user@server.com "pm2 restart myapp"
-    echo "✅ Deployed to $env successfully!"
+    echo " Deployed to $env successfully!"
 }
 
 # Control flow
@@ -106,7 +106,7 @@ echo "${NAME:0:5}"         # hello (substring)
 echo "${#NAME}"            # 11 (length)
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Piping and Redirection](piping-and-redirection.md)
 - [Useful Aliases](useful-aliases.md)

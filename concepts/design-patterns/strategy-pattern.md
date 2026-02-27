@@ -1,10 +1,10 @@
 # Strategy Pattern
 
-## 📖 Definition
+##  Definition
 
 The **Strategy** pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. It lets you change the algorithm used by an object at runtime without changing the object itself.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Strategy eliminates conditional logic for selecting behaviors:
 - Sorting algorithms (sort by name, date, or size)
@@ -12,7 +12,7 @@ Strategy eliminates conditional logic for selecting behaviors:
 - Compression (zip, gzip, bzip2)
 - Authentication (JWT, OAuth, Basic)
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Payment Processing (JavaScript)
 ```javascript
@@ -107,12 +107,12 @@ processor = DataProcessor(QuickSortStrategy())
 print(processor.process(data))  # [11, 12, 22, 25, 34, 64, 90]
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Strategy requires many classes"** — In modern languages, you can use functions/lambdas as strategies instead of full classes.
 2. **"Strategy and State patterns are the same"** — State also encapsulates behavior, but the behavioral change is driven by the object's internal state, not client code.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Factory Pattern](factory-pattern.md)
 - [Decorator Pattern](decorator-pattern.md)

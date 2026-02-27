@@ -1,6 +1,6 @@
 # Error: Async/Await Issues
 
-## 🔴 The Error
+##  The Error
 
 ```
 UnhandledPromiseRejectionWarning: Error: ...
@@ -8,14 +8,14 @@ SyntaxError: await is only valid in async functions
 TypeError: Cannot read property of undefined (from unresolved promise)
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Forgetting `await`** — treating a Promise as a value
 2. **`await` outside async function** — syntax error
 3. **Unhandled promise rejection** — no try/catch
 4. **Race conditions** — parallel async operations interfering
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Solution 1: Always `await` Promises
 ```javascript
@@ -25,9 +25,9 @@ async function displayUser(id) {
   console.log(user.name);   // [object Promise].name → undefined
 }
 
-// ✅ Await the promise
+//  Await the promise
 async function displayUser(id) {
-  const user = await getUser(id); // ✅
+  const user = await getUser(id); // 
   console.log(user.name);
 }
 ```
@@ -40,7 +40,7 @@ async function loadData() {
   return data;
 }
 
-// ✅ With try/catch
+//  With try/catch
 async function loadData() {
   try {
     const response = await fetch('/api/data');
@@ -52,7 +52,7 @@ async function loadData() {
   }
 }
 
-// ✅ In Express: use async wrapper to forward errors
+//  In Express: use async wrapper to forward errors
 const asyncHandler = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
 
 router.get('/users', asyncHandler(async (req, res) => {
@@ -71,7 +71,7 @@ async function loadDashboard() {
   return { user, posts, friends };
 }
 
-// ✅ Parallel — takes 1 second total
+//  Parallel — takes 1 second total
 async function loadDashboard() {
   const [user, posts, friends] = await Promise.all([
     getUser(),
@@ -81,7 +81,7 @@ async function loadDashboard() {
   return { user, posts, friends };
 }
 
-// ✅ Promise.allSettled — don't fail if one rejects
+//  Promise.allSettled — don't fail if one rejects
 const results = await Promise.allSettled([
   getUser(),
   getPosts(),
@@ -92,7 +92,7 @@ const successful = results
   .map(r => r.value);
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - Enable `no-floating-promises` ESLint rule with TypeScript
 - Always add global handler: `process.on('unhandledRejection', console.error)`

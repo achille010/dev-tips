@@ -1,14 +1,14 @@
 # Branch Strategies
 
-## 🎯 Problem
+##  Problem
 
 Without a consistent branching strategy, teams push directly to main, step on each other's work, and end up with integration nightmares. Features, fixes, and releases are hard to track.
 
-## ✨ Solution
+##  Solution
 
 Adopt a structured branching strategy. The three most popular are **Git Flow**, **GitHub Flow**, and **Trunk-Based Development**.
 
-## 💻 Example
+##  Example
 
 ### GitHub Flow (Recommended for Most Teams)
 
@@ -64,7 +64,7 @@ main ─────────────────────────
               └── hotfix/urgent-fix → main + develop
 ```
 
-## 📝 Explanation
+##  Explanation
 
 | Strategy | Best For |
 |----------|----------|
@@ -78,7 +78,7 @@ main ─────────────────────────
 3. **Names reflect purpose**: `fix/header-overflow` not `branch2`
 4. **Delete after merge**: keep repo clean
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Merge vs Rebase](merge-vs-rebase.md)
 - [Stash Management](stash-management.md)

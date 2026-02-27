@@ -2,7 +2,7 @@
 
 Universal debugging strategies that apply to any language or framework.
 
-## 📖 Available Guides
+##  Available Guides
 
 - [Debugging Strategies](debugging-strategies.md)
 - [Reading Stack Traces](reading-stack-traces.md)

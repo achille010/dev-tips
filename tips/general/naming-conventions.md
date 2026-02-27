@@ -1,14 +1,14 @@
 # Naming Conventions
 
-## 🎯 Problem
+##  Problem
 
 Your codebase uses inconsistent naming — some variables are `camelCase`, some `snake_case`, some abbreviated (`usr`, `btn`), others fully spelled out. New developers struggle to follow the logic.
 
-## ✨ Solution
+##  Solution
 
 Adopt a consistent naming convention per language/context and apply it uniformly. Choose names that reveal intent.
 
-## 💻 Example
+##  Example
 
 ### General Rules (Language-Agnostic)
 ```
@@ -106,7 +106,7 @@ function userInfo() {}
 function dataCleaner() {}
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Naming Checklist
 - [ ] Pronounceable (you'll say it in code review)
@@ -115,7 +115,7 @@ function dataCleaner() {}
 - [ ] Consistent with project conventions
 - [ ] Appropriate length (not too short or long)
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Code Organization](code-organization.md)
 - [Documentation Tips](documentation-tips.md)

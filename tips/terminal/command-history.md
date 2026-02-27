@@ -1,14 +1,14 @@
 # Command History
 
-## 🎯 Problem
+##  Problem
 
 You typed a long command earlier and need to run it again, but can't remember it. You're pressing the up arrow 30 times or re-typing from memory.
 
-## ✨ Solution
+##  Solution
 
 The shell records every command in a history file. Learn to search, navigate, and control your history efficiently.
 
-## 💻 Example
+##  Example
 
 ```bash
 # View recent history
@@ -67,7 +67,7 @@ export HISTIGNORE="ls:ll:cd:pwd:clear:exit:history"
 shopt -s histappend  # bash
 ```
 
-## 📝 Explanation
+##  Explanation
 
 Bash defaults to `~/.bash_history`; Zsh uses `~/.zsh_history`.
 
@@ -76,7 +76,7 @@ The `HISTCONTROL=ignorespace` trick is useful for security: prefix a command wit
  export SECRET_KEY=abc123  # ← leading space = not in history
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Keyboard Shortcuts](keyboard-shortcuts.md)
 - [Useful Aliases](useful-aliases.md)

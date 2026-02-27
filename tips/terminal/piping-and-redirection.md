@@ -1,14 +1,14 @@
 # Piping and Redirection
 
-## 🎯 Problem
+##  Problem
 
 You have data in a file or command output that needs to be filtered, transformed, and processed — but you don't know how to chain commands together without writing temporary files.
 
-## ✨ Solution
+##  Solution
 
 **Pipes** (`|`) connect commands — the output of one becomes the input of the next. **Redirection** (`>`, `>>`, `<`) connects commands with files.
 
-## 💻 Example
+##  Example
 
 ### Redirection
 ```bash
@@ -82,19 +82,19 @@ cat access.log | awk '{print $1}' | sort | uniq
 grep -rl "TODO" src/ | xargs code
 ```
 
-## 📝 Explanation
+##  Explanation
 
-| Symbol | Meaning |
-|--------|---------|
-| `>`    | Redirect stdout to file (overwrite) |
-| `>>`   | Redirect stdout to file (append) |
-| `2>`   | Redirect stderr to file |
+| Symbol | Meaning                                 |
+|--------|-----------------------------------------|
+| `>`    | Redirect stdout to file (overwrite)     |
+| `>>`   | Redirect stdout to file (append)        |
+| `2>`   | Redirect stderr to file                 |
 | `2>&1` | Redirect stderr to same place as stdout |
-| `<`    | Redirect file to stdin |
-| `|`    | Pipe stdout of left to stdin of right |
-| `|&`   | Pipe stdout AND stderr |
+| `<`    | Redirect file to stdin                  |
+| `|`    | Pipe stdout of left to stdin of right   |
+| `|&`   | Pipe stdout AND stderr                  |
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Finding Files](finding-files.md)
 - [Shell Scripting Basics](shell-scripting-basics.md)

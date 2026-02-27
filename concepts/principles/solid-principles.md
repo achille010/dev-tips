@@ -1,6 +1,6 @@
 # SOLID Principles
 
-## 📖 Definition
+##  Definition
 
 **SOLID** is an acronym for five design principles that make software more maintainable, flexible, and scalable. Coined by Robert C. Martin ("Uncle Bob").
 
@@ -12,7 +12,7 @@
 | **I** | Interface Segregation | Many specific interfaces > one general interface |
 | **D** | Dependency Inversion | Depend on abstractions, not concretions |
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 SOLID violations cause:
 - **God classes** that do everything
@@ -20,7 +20,7 @@ SOLID violations cause:
 - **Rigid code** that's hard to extend
 - **Untestable code** with too many dependencies
 
-## 💻 Examples
+##  Examples
 
 ### S — Single Responsibility Principle
 ```python
@@ -32,7 +32,7 @@ class Report:
     def save_to_database(self):...
     def send_by_email(self):   ...
 
-# ✅ Each class has one responsibility
+#  Each class has one responsibility
 class ReportData:
     def generate(self): ...
 
@@ -60,7 +60,7 @@ class OrderCalculator {
   }
 }
 
-// ✅ OCP: extend by adding new strategy, not modifying existing code
+//  OCP: extend by adding new strategy, not modifying existing code
 class VIPDiscount    { calculate(total) { return total * 0.2; } }
 class MemberDiscount { calculate(total) { return total * 0.1; } }
 class NewUserDiscount{ calculate(total) { return total * 0.05; } }
@@ -85,7 +85,7 @@ class Square(Rectangle):  # Bad inheritance!
     def set_height(self, h):
         self.width = self.height = h
 
-# ✅ LSP: use composition or a common interface
+#  LSP: use composition or a common interface
 class Shape:
     def area(self): pass
 
@@ -107,7 +107,7 @@ interface Worker {
   sleep(): void;
 }
 
-// ✅ ISP: split into focused interfaces
+//  ISP: split into focused interfaces
 interface Workable { work(): void; }
 interface Eatable  { eat(): void;  }
 interface Sleepable{ sleep(): void;}
@@ -134,7 +134,7 @@ class NotificationService {
   notify(message) { this.emailer.send(message); }
 }
 
-// ✅ DIP: depend on abstraction
+//  DIP: depend on abstraction
 class NotificationService {
   constructor(mailer) { // inject the abstraction
     this.mailer = mailer;
@@ -149,12 +149,12 @@ class SendGridClient{ send(msg) { /* ... */ } }
 const service = new NotificationService(new SendGridClient());
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"SOLID must always be followed"** — Over-applying SOLID creates unnecessary abstraction. Use principles as guidelines, not rules.
 2. **"DIP means use dependency injection frameworks"** — DIP is about direction of dependencies; DI is one implementation.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [DRY Principle](dry-principle.md)
 - [Design Patterns](../design-patterns/)

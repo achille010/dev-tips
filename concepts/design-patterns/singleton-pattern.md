@@ -1,10 +1,10 @@
 # Singleton Pattern
 
-## 📖 Definition
+##  Definition
 
 The **Singleton** pattern ensures a class has **only one instance** and provides a global point of access to it. It's one of the most well-known (and debated) design patterns.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Use singletons when exactly one object is needed to coordinate actions across a system:
 - Database connection pools
@@ -13,7 +13,7 @@ Use singletons when exactly one object is needed to coordinate actions across a 
 - Caches
 - Thread pools
 
-## 🔍 How It Works
+##  How It Works
 
 ```
 Client A ──→ getInstance() ──→ [Single Instance]
@@ -23,7 +23,7 @@ Client C ──→ getInstance() ──→ [same Single Instance]
 
 The constructor is made private (or equivalent), and a static method `getInstance()` returns the same instance every time.
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: JavaScript
 ```javascript
@@ -91,13 +91,13 @@ print(db1 is db2)  # True
 db1.query("SELECT * FROM users")
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Singletons are just global variables"** — They provide lazy initialization, controlled instantiation, and can be subclassed.
 2. **"Singleton is always the right choice for shared resources"** — Singletons make testing harder (shared state between tests). Consider dependency injection instead.
 3. **"Singleton guarantees thread safety"** — Not automatically. You must add locking (as shown in Python example) for thread-safe access.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Factory Pattern](factory-pattern.md)
 - [Observer Pattern](observer-pattern.md)

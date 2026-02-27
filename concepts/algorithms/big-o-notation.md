@@ -1,6 +1,6 @@
 # Big-O Notation
 
-## 📖 Definition
+##  Definition
 
 **Big-O notation** describes the upper bound of an algorithm's time or space complexity as a function of the input size **n**. It answers: *"How does performance scale as input grows?"*
 
@@ -9,11 +9,11 @@ It captures the **dominant term** and **ignores constants** — because at large
 - O(n² + n) → O(n²)
 - O(500) → O(1)
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Two algorithms that both "work" can differ by millions of operations for large inputs. Choosing the right algorithm determines whether your software is fast or unusable at scale.
 
-## 🔍 Complexity Classes (Best to Worst)
+## Complexity Classes (Best to Worst)
 
 | Complexity | Name          | n=10    | n=100      | n=1,000,000  |
 |-----------|---------------|---------|------------|--------------|
@@ -25,7 +25,7 @@ Two algorithms that both "work" can differ by millions of operations for large i
 | O(2ⁿ)     | Exponential   | 1,024   | 10³⁰       | 💀            |
 | O(n!)     | Factorial     | 3628800 | 9.3×10¹⁵⁷ | 💀💀          |
 
-## 💻 Examples
+##  Examples
 
 ### Identifying Complexity
 ```javascript
@@ -101,13 +101,13 @@ def has_duplicate_fast(arr):
     return False
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"O(1) means fast"** — O(1) means *constant*, not necessarily fast. A constant 10 million operations is still O(1) but very slow.
 2. **"Always optimize for the best Big-O"** — Constant factors matter for small inputs. O(n²) with tiny constants can beat O(n log n) for n < 100.
 3. **"Big-O is about worst case"** — Not always. Big-O is an upper bound notation. We also use Omega (Ω) for lower bound and Theta (Θ) for tight bound.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Sorting Algorithms](sorting-algorithms.md)
 - [Searching Algorithms](searching-algorithms.md)

@@ -1,14 +1,14 @@
 # Customizing Your Shell Prompt
 
-## 🎯 Problem
+##  Problem
 
 The default terminal prompt is plain and tells you nothing useful. You want to see the current git branch, project, or error status at a glance.
 
-## ✨ Solution
+##  Solution
 
 Customize your `PS1` (Bash prompt variable) or `PROMPT` (Zsh). Better yet, use a modern prompt framework like **Starship** or **Oh My Zsh** themes.
 
-## 💻 Example
+##  Example
 
 ### Bash Custom Prompt
 ```bash
@@ -90,7 +90,7 @@ style = "bold cyan"
 truncation_length = 3
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Useful Aliases](useful-aliases.md)
 - [SSH Tips](ssh-tips.md)

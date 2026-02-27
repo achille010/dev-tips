@@ -1,6 +1,6 @@
 # Factory Pattern
 
-## 📖 Definition
+##  Definition
 
 The **Factory** pattern provides an interface for creating objects without specifying the exact class of object that will be created. It delegates the instantiation logic to subclasses or a factory function.
 
@@ -9,7 +9,7 @@ The **Factory** pattern provides an interface for creating objects without speci
 - **Factory Method** — a method in subclasses that creates objects
 - **Abstract Factory** — a family of related factories
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Factories decouple creation from usage:
 - Add new types without changing existing code (Open/Closed Principle)
@@ -17,7 +17,7 @@ Factories decouple creation from usage:
 - Enable dependency injection and testing
 - Create platform-specific objects
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Simple Factory (JavaScript)
 ```javascript
@@ -101,12 +101,12 @@ dialog = WindowsDialog() if os_type == 'Windows' else MacDialog()
 print(dialog.render())
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Factory and Constructor are the same"** — Constructors always create instances of the same class. Factories can return subclasses, cached objects, or even mock objects.
 2. **"Factory pattern adds unnecessary complexity"** — For one or two types, it's overkill. But as the number of types grows, factories become invaluable.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Singleton Pattern](singleton-pattern.md)
 - [Strategy Pattern](strategy-pattern.md)

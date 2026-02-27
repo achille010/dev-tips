@@ -1,14 +1,14 @@
 # Cherry Pick Commits
 
-## 🎯 Problem
+##  Problem
 
 A bug fix or specific commit exists on another branch, and you need it in your current branch — without merging the entire branch.
 
-## ✨ Solution
+##  Solution
 
 `git cherry-pick` applies the changes of a specific commit onto your current branch, creating a new commit with the same changes.
 
-## 💻 Example
+##  Example
 
 ```bash
 # View commits on another branch
@@ -39,14 +39,14 @@ git cherry-pick e6f7a8b -e  # opens editor
 # Or cancel: git cherry-pick --abort
 ```
 
-## 📝 Explanation
+##  Explanation
 
 Cherry-pick is useful for:
 - **Hotfixes**: Apply a fix from develop → release branch
 - **Feature Subsets**: Pull a specific improvement without the full feature
 - **Recovering Commits**: Bring back accidentally deleted commits
 
-> ⚠️ **Warning**: Cherry-picking creates a *copy* of the commit with a new SHA. If both branches eventually merge, git may see it as a conflict. Use sparingly — prefer regular merges when possible.
+>  **Warning**: Cherry-picking creates a *copy* of the commit with a new SHA. If both branches eventually merge, git may see it as a conflict. Use sparingly — prefer regular merges when possible.
 
 ## 🔗 Related Tips
 

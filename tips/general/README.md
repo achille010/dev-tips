@@ -2,7 +2,7 @@
 
 Code organization and best practices for everyday development.
 
-## 📖 Available Tips
+##  Available Tips
 
 - [Code Organization](code-organization.md) - Structure files for clarity
 - [Naming Conventions](naming-conventions.md) - Choose names that communicate
@@ -15,7 +15,7 @@ Code organization and best practices for everyday development.
 - [Testing Tips](testing-tips.md) - Write better tests faster
 - [Productivity Hacks](productivity-hacks.md) - Get more done
 
-## 🎯 Quick Reference
+##  Quick Reference
 
 **Daily habits:**
 1. Naming conventions

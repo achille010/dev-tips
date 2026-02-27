@@ -1,10 +1,10 @@
 # MVC Architecture
 
-## 📖 Definition
+##  Definition
 
 **MVC (Model-View-Controller)** separates an application into three interconnected components: **Model** (data/business logic), **View** (UI/presentation), and **Controller** (input handler/orchestrator).
 
-## 💻 Examples
+##  Examples
 
 ### Node.js/Express MVC
 ```
@@ -37,13 +37,13 @@ async function getUser(req, res) {
 router.get('/users/:id', userController.getUser);
 ```
 
-## 🎯 When to Use MVC
+##  When to Use MVC
 
 - Web applications with server-side rendering
 - REST APIs (View becomes JSON response)
 - Application frameworks: Rails, Laravel, Django, ASP.NET MVC
 
-## 📚 Further Reading
+##  Further Reading
 
 - [REST API Design](rest-api-design.md)
 - [Separation of Concerns](../principles/separation-of-concerns.md)

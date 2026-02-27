@@ -1,6 +1,6 @@
 # Error: CORS Errors
 
-## 🔴 The Error
+##  The Error
 
 ```
 Access to fetch at 'http://api.example.com/data' from origin 'http://localhost:3000'
@@ -8,14 +8,14 @@ has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is pres
 on the requested resource.
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Server doesn't send CORS headers** — most common cause
 2. **Wrong origin in allowed list** — typo or mismatch
 3. **Preflight OPTIONS not handled** — missing OPTIONS handler
 4. **Credentials + wildcard** — `credentials: include` with `*` origin is invalid
 
-## ⚡ Quick Fix
+##  Quick Fix
 
 CORS errors only happen in browsers. The server must explicitly allow the frontend's origin.
 
@@ -29,7 +29,7 @@ app.use(cors({
 }));
 ```
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Solution 1: Express with cors package
 ```javascript
@@ -83,13 +83,13 @@ devServer: {
 }
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - Never use `Access-Control-Allow-Origin: *` with `credentials: true`
 - In production, whitelist only known trusted origins
 - Consider using a same-domain API to avoid CORS entirely
 
-## 🔗 Related Errors
+##  Related Errors
 
 - [Async/Await Issues](async-await-issues.md)
 - [Module Not Found](module-not-found.md)

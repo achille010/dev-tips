@@ -2,7 +2,7 @@
 
 Common Python errors and how to fix them.
 
-## 📖 Available Guides
+##  Available Guides
 
 - [Indentation Error](indentation-error.md)
 - [Module Not Found](module-not-found.md)

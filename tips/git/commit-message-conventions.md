@@ -1,14 +1,14 @@
 # Commit Message Conventions
 
-## 🎯 Problem
+##  Problem
 
 Inconsistent, vague commit messages make `git log` useless. Messages like "fix stuff", "WIP", or "asdf" tell teammates (and future-you) nothing about what changed or why.
 
-## ✨ Solution
+##  Solution
 
 Follow the **Conventional Commits** specification. It provides a structured format that makes history readable, enables automated changelogs, and communicates intent clearly.
 
-## 💻 Example
+##  Example
 
 ### The Format
 ```
@@ -20,18 +20,18 @@ Follow the **Conventional Commits** specification. It provides a structured form
 ```
 
 ### Types
-| Type | When to Use |
-|------|-------------|
-| `feat` | New feature |
-| `fix` | Bug fix |
-| `docs` | Documentation only |
-| `style` | Formatting (no code logic change) |
+| Type       | When to Use                            |
+|------------|----------------------------------------|
+| `feat`     | New feature                            |
+| `fix`      | Bug fix                                |
+| `docs`     | Documentation only                     |
+| `style`    | Formatting (no code logic change)      |
 | `refactor` | Code change (not feature, not bug fix) |
-| `test` | Adding or updating tests |
-| `chore` | Build process, dependency updates |
-| `perf` | Performance improvement |
-| `ci` | CI configuration changes |
-| `revert` | Reverts a previous commit |
+| `test`     | Adding or updating tests               |
+| `chore`    | Build process, dependency updates      |
+| `perf`     | Performance improvement                |
+| `ci`       | CI configuration changes               |
+| `revert`   | Reverts a previous commit              |
 
 ### Real Examples
 ```bash
@@ -49,7 +49,7 @@ Closes #234
 # Breaking change
 feat(api)!: change /users endpoint to return paginated response
 
-BREAKING CHANGE: Response is now { data: [], meta: { page, total } }
+BREAKING_CHANGE: Response is now { data: [] , meta: { page, total } }
 instead of a plain array.
 
 # Docs
@@ -59,7 +59,7 @@ docs(contributing): add section on coding standards
 chore(deps): bump axios from 1.2.0 to 1.3.1
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Subject Line Rules
 1. **Imperative mood**: "Add feature" not "Added feature"
@@ -73,7 +73,7 @@ chore(deps): bump axios from 1.2.0 to 1.3.1
 - Code reviewers instantly understand scope from message structure
 - `feat:` bumps minor version, `fix:` bumps patch, `!` bumps major
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Interactive Rebase](interactive-rebase.md)
 - [Undo Mistakes](undo-mistakes.md)

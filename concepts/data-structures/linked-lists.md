@@ -1,6 +1,6 @@
 # Linked Lists
 
-## 📖 Definition
+##  Definition
 
 A **linked list** is a linear data structure where elements (nodes) are stored in non-contiguous memory locations. Each node contains a **value** and a **pointer** (reference) to the next node. Unlike arrays, linked lists don't require contiguous memory.
 
@@ -9,14 +9,14 @@ A **linked list** is a linear data structure where elements (nodes) are stored i
 - **Doubly Linked**: Each node points to both next and previous nodes
 - **Circular Linked**: The last node points back to the first node
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Linked lists shine when:
 - You need frequent insertions/deletions at the front (O(1) vs O(n) for arrays)
 - Memory size is unknown in advance
 - Implementing stacks, queues, and hash table chaining
 
-## 🔍 How It Works
+##  How It Works
 
 ### Singly Linked List Structure
 ```
@@ -28,17 +28,17 @@ Head
 ### Time Complexities
 
 | Operation        | Linked List | Array |
-|-----------------|-------------|-------|
-| Access by index | O(n)        | O(1)  |
-| Insert at front | O(1)        | O(n)  |
-| Insert at end   | O(n)*       | O(1)* |
-| Insert at middle| O(n)        | O(n)  |
-| Delete at front | O(1)        | O(n)  |
-| Search          | O(n)        | O(n)  |
+|------------------|-------------|-------|
+| Access by index  | O(n)        | O(1)  |
+| Insert at front  | O(1)        | O(n)  |
+| Insert at end    | O(n)*       | O(1)* |
+| Insert at middle | O(n)        | O(n)  |
+| Delete at front  | O(1)        | O(n)  |
+| Search           | O(n)        | O(n)  |
 
 *O(1) if tail pointer maintained
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Singly Linked List (JavaScript)
 ```javascript
@@ -137,13 +137,13 @@ def has_cycle(head):
     return False
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Linked lists are always better than arrays"** — Arrays have O(1) random access; linked lists require O(n) traversal for indexed access.
 2. **"Linked lists save memory"** — Each node stores a pointer in addition to the value, increasing per-element memory overhead.
 3. **"Doubly linked lists are always preferred"** — They use more memory and are more complex to maintain. Use singly linked lists when you only need forward traversal.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Arrays and Lists](arrays-and-lists.md)
 - [Stacks and Queues](stacks-and-queues.md)

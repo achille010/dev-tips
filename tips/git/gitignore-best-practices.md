@@ -1,14 +1,14 @@
 # Gitignore Best Practices
 
-## 🎯 Problem
+##  Problem
 
 Accidentally committing `node_modules`, `.env` files, build artifacts, or OS-generated junk to your repository creates bloat, security risks, and headaches for collaborators.
 
-## ✨ Solution
+##  Solution
 
 Create a well-structured `.gitignore` file that excludes all files that don't belong in your repository.
 
-## 💻 Example
+##  Example
 
 ### Comprehensive .gitignore Template
 
@@ -111,7 +111,7 @@ git config --global core.excludesfile ~/.gitignore_global
 .vscode/
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Pattern Reference
 | Pattern | Matches |
@@ -123,7 +123,7 @@ git config --global core.excludesfile ~/.gitignore_global
 | `**/*.pyc` | .pyc in any subdirectory |
 | `doc/*.txt` | .txt files directly in doc/ |
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Useful Aliases](useful-aliases.md)
 - [Undo Mistakes](undo-mistakes.md)

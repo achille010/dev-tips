@@ -1,14 +1,14 @@
 # Finding Files
 
-## 🎯 Problem
+##  Problem
 
 You need to locate a file, find all files of a certain type, or search inside files for specific content — but don't know the right commands.
 
-## ✨ Solution
+##  Solution
 
 Use `find` for file discovery, `grep` for searching file content, and `locate` for quick indexed search.
 
-## 💻 Example
+##  Example
 
 ### `find` — Find Files by Properties
 ```bash
@@ -80,7 +80,7 @@ rg -t js "TODO"       # search only in .js files
 rg -l "TODO"          # show filenames only
 ```
 
-## 📝 Explanation
+##  Explanation
 
 | Tool | Best For |
 |------|----------|
@@ -90,7 +90,7 @@ rg -l "TODO"          # show filenames only
 | `fd` | Faster, user-friendly `find` replacement |
 | `rg` | Faster, smarter `grep` replacement |
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Piping and Redirection](piping-and-redirection.md)
 - [Shell Scripting Basics](shell-scripting-basics.md)

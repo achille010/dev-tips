@@ -1,31 +1,27 @@
 # Error: Merge Conflicts
 
-## 🔴 The Error
+##  The Error
 
 ```
 CONFLICT (content): Merge conflict in src/app.js
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Two branches modified the same line** — most common
 2. **File renamed on one branch, modified on another**
 3. **File deleted on one branch, modified on another**
 
-## ⚡ Quick Fix
+##  Quick Fix
 
 Conflicts are **not emergencies** — they're git asking for your decision. Open the conflicting file, choose the correct code, then complete the merge.
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Step 1: Understand the Conflict Markers
 ```
-<<<<<<< HEAD (your branch)
 const API_URL = 'http://localhost:3000';
-=======
-const API_URL = 'https://api.production.com';
->>>>>>> feature/update-config (incoming branch)
 ```
 
 The conflict is between **HEAD** (your current branch) and the **incoming branch**.
@@ -64,7 +60,7 @@ VS Code shows a visual diff with buttons:
 git merge --abort  # cancel the entire merge, restore to pre-merge state
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - **Pull frequently** — small conflicts are easier than large ones
 - **Keep branches short-lived** — the longer a feature branch lives, the more divergence

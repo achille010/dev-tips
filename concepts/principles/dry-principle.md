@@ -1,19 +1,19 @@
 # DRY Principle
 
-## 📖 Definition
+##  Definition
 
 **DRY (Don't Repeat Yourself)** states: *"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."* — Andy Hunt & Dave Thomas, The Pragmatic Programmer.
 
 If you find yourself copying code, there's likely a DRY violation.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 When knowledge is duplicated:
 - A bug fix in one place leaves it unfixed in others
 - Feature changes must be synchronized across duplicates
 - Cognitive overhead increases as you must track all copies
 
-## 💻 Examples
+##  Examples
 
 ### Violating DRY — Then Fixing It
 ```javascript
@@ -30,7 +30,7 @@ function updateUser(email, password) {
   // update...
 }
 
-// ✅ DRY: single source of truth for validation
+//  DRY: single source of truth for validation
 function validateEmail(email) {
   if (!email.includes('@')) throw new Error('Invalid email');
 }
@@ -60,7 +60,7 @@ price1_with_tax = 10.00 * 1.08
 price2_with_tax = 25.00 * 1.08
 price3_with_tax = 50.00 * 1.08
 
-# ✅ Single source of truth
+#  Single source of truth
 TAX_RATE = 1.08
 
 def apply_tax(price):
@@ -70,12 +70,12 @@ prices = [10.00, 25.00, 50.00]
 prices_with_tax = [apply_tax(p) for p in prices]
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"DRY means never copy any code"** — DRY is about *knowledge*, not *code text*. Sometimes similar-looking code represents different concepts and should remain separate.
 2. **"DRY abstraction is always better"** — Premature DRY creates wrong abstractions. WET (Write Everything Twice) is sometimes acceptable early on; abstract after the third occurrence.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [SOLID Principles](solid-principles.md)
 - [KISS Principle](kiss-principle.md)

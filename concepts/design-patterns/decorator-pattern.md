@@ -1,10 +1,10 @@
 # Decorator Pattern
 
-## 📖 Definition
+##  Definition
 
 The **Decorator** pattern attaches additional responsibilities to an object dynamically. It provides a flexible alternative to subclassing for extending functionality by wrapping objects in decorator objects.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Decorators let you add/compose behavior without modifying existing classes:
 - HTTP middleware (authentication, logging, rate limiting)
@@ -12,7 +12,7 @@ Decorators let you add/compose behavior without modifying existing classes:
 - Java I/O streams (BufferedReader wraps FileReader)
 - UI component enhancements
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Coffee Shop (JavaScript)
 ```javascript
@@ -94,12 +94,12 @@ slow_add(3, 5)
 # slow_add took 0.1001s
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Decorator is just inheritance"** — Inheritance is static; decorators compose dynamically at runtime and can wrap any object implementing the same interface.
 2. **"Python @decorators are the GoF Decorator pattern"** — Python decorators are a language feature for wrapping functions; they're related but not the same formal pattern.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Strategy Pattern](strategy-pattern.md)
 - [Observer Pattern](observer-pattern.md)

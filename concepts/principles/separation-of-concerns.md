@@ -1,10 +1,10 @@
 # Separation of Concerns
 
-## 📖 Definition
+##  Definition
 
 **Separation of Concerns (SoC)** is a design principle for separating a program into distinct sections, where each section addresses a separate **concern** — a set of related responsibilities or information. A concern is any aspect of a program's functionality.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 SoC enables:
 - **Independent development** — teams work on different concerns simultaneously
@@ -12,7 +12,7 @@ SoC enables:
 - **Replaceability** — swap database without changing business rules
 - **Comprehensibility** — understand one part without knowing everything
 
-## 💻 Examples
+##  Examples
 
 ### MVC as Separation of Concerns
 ```
@@ -34,7 +34,7 @@ app.post('/register', async (req, res) => {
   res.json({ token });
 });
 
-// ✅ Separated concerns:
+//  Separated concerns:
 
 // routes/auth.js — HTTP concern
 router.post('/register', authController.register);
@@ -73,7 +73,7 @@ async function create(data) {
   Important message
 </p>
 
-<!-- ✅ Separated concerns -->
+<!--  Separated concerns -->
 <!-- HTML: structure/content -->
 <p class="alert-message" id="importantMsg">Important message</p>
 
@@ -88,12 +88,12 @@ document.getElementById('importantMsg').addEventListener('click', () => alert('c
 </script>
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"SoC means one file per concern"** — SoC is about logical separation; physical file organization is just one approach.
 2. **"SoC always means more files and layers"** — For small scripts, one file is perfectly appropriate. Apply SoC proportional to system complexity.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [MVC Architecture](../architecture/mvc-architecture.md)
 - [SOLID Principles](solid-principles.md)

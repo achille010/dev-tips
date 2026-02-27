@@ -1,14 +1,14 @@
 # Debugging Strategies
 
-## 🎯 Problem
+##  Problem
 
 A bug exists but you don't know where or why. You're adding `console.log` statements randomly and spending hours on something that structured debugging would solve in minutes.
 
-## ✨ Solution
+##  Solution
 
 Apply a systematic debugging process. Bugs always have a cause; systematic investigation finds it faster than random changes.
 
-## 💻 Example
+##  Example
 
 ### The Scientific Method for Debugging
 
@@ -80,7 +80,7 @@ node --inspect-brk app.js
 # Set breakpoints, step through code interactively
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Common Debugging Mistakes
 1. **Random changes** — "maybe this will fix it" without understanding why
@@ -88,7 +88,7 @@ node --inspect-brk app.js
 3. **Changing too many things at once** — makes it hard to know what worked
 4. **Not checking assumptions** — "I know X is true" (verify it anyway)
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Reading Stack Traces](reading-stack-traces.md)
 - [Using Debuggers](using-debuggers.md)

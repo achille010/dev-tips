@@ -2,7 +2,7 @@
 
 Common errors and how to fix them.
 
-## 🔍 By Language
+##  By Language
 
 ### [JavaScript](javascript/)
 Node.js and browser errors.
@@ -19,7 +19,7 @@ Node.js and npm errors.
 ### [General](general/)
 Universal debugging strategies.
 
-## 🎯 Quick Reference
+##  Quick Reference
 
 **Common Issues:**
 - Module not found

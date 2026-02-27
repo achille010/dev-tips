@@ -1,14 +1,14 @@
 # Interactive Rebase
 
-## 🎯 Problem
+##  Problem
 
 Your commit history is messy — typo fixes, WIP commits, and forgotten changes are cluttering the log before you open a pull request. You need a way to clean up commits before sharing your work.
 
-## ✨ Solution
+##  Solution
 
 `git rebase -i` (interactive rebase) lets you rewrite commit history: squash commits, reword messages, reorder commits, or drop them entirely — before sharing with others.
 
-## 💻 Example
+##  Example
 
 ```bash
 # Rewrite the last 4 commits
@@ -44,11 +44,11 @@ c3d4e5f Add password validation  (squashed from 2 commits)
 f1a2b3c Add password validation tests
 ```
 
-## 📝 Explanation
+##  Explanation
 
 Interactive rebase rewrites local history. The commits get new SHA hashes, so:
-- ✅ Safe on feature branches you haven't shared yet
-- ⚠️ **DON'T rebase shared/public branches** — it will confuse teammates
+-  Safe on feature branches you haven't shared yet
+-  **DON'T rebase shared/public branches** — it will confuse teammates
 
 ### Useful Rebase Flags
 ```bash
@@ -58,7 +58,7 @@ git rebase --abort       # Cancel rebase, restore original state
 git rebase --continue    # After resolving conflicts, continue
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Merge vs Rebase](merge-vs-rebase.md)
 - [Undo Mistakes](undo-mistakes.md)

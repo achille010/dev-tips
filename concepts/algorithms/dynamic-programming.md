@@ -1,12 +1,12 @@
 # Dynamic Programming
 
-## 📖 Definition
+##  Definition
 
 **Dynamic Programming (DP)** is an optimization technique that solves complex problems by breaking them into overlapping subproblems, solving each subproblem only once, and storing results for reuse. It's applicable when a problem has:
 1. **Optimal substructure** — optimal solution contains optimal solutions to subproblems
 2. **Overlapping subproblems** — same subproblems are solved multiple times
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 DP turns exponential algorithms into polynomial ones:
 - Fibonacci: O(2^n) → O(n)
@@ -14,7 +14,7 @@ DP turns exponential algorithms into polynomial ones:
 - Sequence alignment in bioinformatics
 - Resource allocation and scheduling
 
-## 🔍 Two Approaches
+##  Two Approaches
 
 ### Top-Down: Memoization (Recursion + Cache)
 ```
@@ -35,7 +35,7 @@ dp[4] = dp[3] + dp[2] = 3
 dp[5] = dp[4] + dp[3] = 5
 ```
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Fibonacci (JavaScript)
 ```javascript
@@ -107,13 +107,13 @@ function lcs(s1, s2) {
 console.log(lcs('ABCBDAB', 'BDCAB')); // 4 (BCAB or BDAB)
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"DP is just recursion with memoization"** — Memoization is one implementation. Tabulation (bottom-up) is equally valid and often more space-efficient.
 2. **"DP always requires a 2D table"** — Many DP problems (Fibonacci, climbing stairs) only need O(1) or O(n) space.
 3. **"Greedy algorithms are a subset of DP"** — Greedy makes locally optimal choices; DP explores all subproblems. They're distinct techniques.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Recursion](recursion.md)
 - [Big-O Notation](big-o-notation.md)

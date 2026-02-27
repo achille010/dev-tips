@@ -1,10 +1,10 @@
 # Event-Driven Architecture
 
-## 📖 Definition
+##  Definition
 
 **Event-Driven Architecture (EDA)** is a software design pattern where components communicate by producing and consuming **events** — notifications that something significant has happened. Producers emit events; consumers react to them asynchronously.
 
-## 🔍 Core Components
+##  Core Components
 
 ```
 [Producer] → emits event → [Message Broker] → delivers → [Consumer(s)]
@@ -21,7 +21,7 @@ Example event:
 }
 ```
 
-## 💻 Example: Node.js with EventEmitter
+##  Example: Node.js with EventEmitter
 
 ```javascript
 const EventEmitter = require('events');
@@ -56,19 +56,19 @@ orderService.placeOrder({ id: 123, email: 'user@example.com', total: 49.99 });
 // All three consumers react independently!
 ```
 
-## 🎯 Benefits
+##  Benefits
 
 - **Loose coupling** — producer doesn't know about consumers
 - **Scalability** — consumers can be scaled independently
 - **Resilience** — consumer failures don't affect the producer
 - **Audit trail** — events log exactly what happened and when
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"EDA always requires a message broker"** — Simple in-process event emitters are EDA too. Brokers add durability and cross-service capabilities.
 2. **"Events replace synchronous APIs"** — Some operations need immediate responses (login, payment verification). Events complement, not replace, synchronous calls.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Microservices](microservices.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)

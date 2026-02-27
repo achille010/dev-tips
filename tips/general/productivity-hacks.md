@@ -1,14 +1,14 @@
 # Productivity Hacks
 
-## 🎯 Problem
+##  Problem
 
 You feel busy but not productive. Context switching, interruptions, and inefficient workflows are stealing hours from your day.
 
-## ✨ Solution
+##  Solution
 
 Protect your deep work time, reduce context switching, master your tools, and automate repetitive tasks.
 
-## 💻 Example
+##  Example
 
 ### Keyboard-First Workflow
 ```bash
@@ -93,7 +93,7 @@ Rules:
 }
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### High-Impact Habits
 1. **Morning ritual** — before email, plan your top 3 tasks
@@ -101,7 +101,7 @@ Rules:
 3. **Batch similar tasks** — code reviews 2x/day, not constantly
 4. **End-of-day shutdown routine** — write tomorrow's top 3 tasks, close IDE
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Code Organization](code-organization.md)
 - [Useful Aliases](../terminal/useful-aliases.md)

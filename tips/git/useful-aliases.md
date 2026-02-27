@@ -1,14 +1,14 @@
 # Useful Git Aliases
 
-## 🎯 Problem
+##  Problem
 
 Typing `git status`, `git checkout`, `git log --oneline --graph` repeatedly is slow and error-prone. You waste keystrokes on commands you run dozens of times per day.
 
-## ✨ Solution
+##  Solution
 
 Configure Git aliases to create shortcuts for frequently used commands. Add them to your global `~/.gitconfig` or per-project `.git/config`.
 
-## 💻 Example
+##  Example
 
 ### Essential Aliases
 ```bash
@@ -65,7 +65,7 @@ git unstage file.js          # unstage a file
 git undo        # undo last commit, keep changes staged
 ```
 
-## 📝 Explanation
+##  Explanation
 
 Git aliases also support shell commands by prefixing with `!`:
 
@@ -81,7 +81,7 @@ Git aliases also support shell commands by prefixing with `!`:
     show-files = show --name-only --pretty=format:''
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Undo Mistakes](undo-mistakes.md)
 - [Stash Management](stash-management.md)

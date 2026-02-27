@@ -1,14 +1,14 @@
 # Testing Tips
 
-## 🎯 Problem
+##  Problem
 
 Tests are either missing entirely, or they test implementation details so closely that every refactor breaks them, making tests a burden rather than a safety net.
 
-## ✨ Solution
+##  Solution
 
 Test behavior, not implementation. Apply the testing pyramid (many unit tests, fewer integration, few E2E). Keep tests isolated, fast, and deterministic.
 
-## 💻 Example
+##  Example
 
 ### Unit Testing (JavaScript/Jest)
 ```javascript
@@ -19,7 +19,7 @@ test('calls calculateDiscount with 0.1', () => {
   expect(spy).toHaveBeenCalledWith(0.1);
 });
 
-// ✅ Testing behavior (robust)
+//  Testing behavior (robust)
 test('10% member discount applied correctly', () => {
   const order = { total: 100, memberType: 'member' };
   const result = service.processOrder(order);
@@ -58,8 +58,8 @@ describe('UserService', () => {
 ### Test Coverage Philosophy
 ```
 Unit tests     ████████████████████████████ 70%
-Integration    ████████████              20%
-E2E            ████                       10%
+Integration    ████████████                 20%
+E2E            ████                         10%
 ```
 
 ### Test Naming
@@ -73,7 +73,7 @@ it('should throw ValidationError when email format is invalid');
 it('should send confirmation email after successful registration');
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Testing Anti-Patterns to Avoid
 - **Testing implementation** — mock internals rarely; test outcomes
@@ -81,7 +81,7 @@ it('should send confirmation email after successful registration');
 - **Tests that depend on order** — every test should be independent
 - **Slow tests** — mock external services (DB, APIs); unit tests should be < 5ms
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Code Review Tips](code-review-tips.md)
 - [Error Handling](error-handling.md)

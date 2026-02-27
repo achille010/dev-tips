@@ -1,14 +1,14 @@
 # Terminal Keyboard Shortcuts
 
-## 🎯 Problem
+##  Problem
 
 You're constantly reaching for the mouse or retyping commands character by character, wasting time on basic navigation when there are faster keyboard-driven ways.
 
-## ✨ Solution
+##  Solution
 
 Learn these essential terminal keyboard shortcuts for Bash/Zsh. Once memorized, they dramatically speed up your workflow.
 
-## 💻 Example
+##  Example
 
 ### Cursor Movement
 ```bash
@@ -60,7 +60,7 @@ Ctrl + R    # Reverse search through history
 Ctrl + G    # Exit history search without running
 ```
 
-## 📝 Explanation
+##  Explanation
 
 These are based on **readline** keybindings (emacs mode, which is the default). Your terminal can also be set to vi mode:
 ```bash
@@ -77,7 +77,7 @@ set -o emacs
 3. `Ctrl+L` — clear screen
 4. `Ctrl+C` / `Ctrl+D` — stop/exit
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Command History](command-history.md)
 - [Useful Aliases](useful-aliases.md)

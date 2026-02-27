@@ -1,10 +1,10 @@
 # Searching Algorithms
 
-## 📖 Definition
+##  Definition
 
 A **searching algorithm** finds an element within a data structure. The two fundamental approaches are **linear search** (O(n), works on unsorted data) and **binary search** (O(log n), requires sorted data).
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Efficient searching is at the core of:
 - Database queries
@@ -12,7 +12,7 @@ Efficient searching is at the core of:
 - Finding items in sorted lists
 - AI game tree searches (minimax, alpha-beta pruning)
 
-## 🔍 How It Works
+##  How It Works
 
 ### Linear Search
 Check every element from left to right until found.
@@ -33,7 +33,7 @@ Find 1:
   → mid = 1, 1 == 1 ✓ (3 comparisons)
 ```
 
-## 💻 Examples
+##  Examples
 
 ### Binary Search (Iterative)
 ```javascript
@@ -91,13 +91,13 @@ def ternary_search(arr, target):
     return -1
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Binary search is complex to implement"** — It's surprisingly easy to get wrong (off-by-one errors). Always verify your mid calculation: `mid = left + (right - left) // 2` avoids integer overflow.
 2. **"Linear search is always bad"** — For tiny arrays (< 10 elements) or unsorted data, linear search is perfectly fine.
 3. **"Binary search only works for numbers"** — It works for any comparable, sorted sequence: strings, dates, custom objects.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Sorting Algorithms](sorting-algorithms.md)
 - [Big-O Notation](big-o-notation.md)

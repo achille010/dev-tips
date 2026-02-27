@@ -1,14 +1,14 @@
 # Code Organization
 
-## 🎯 Problem
+##  Problem
 
 Your project has grown organically and files are scattered everywhere — components mixed with utilities, business logic inside routes, no clear structure. It's hard to find anything.
 
-## ✨ Solution
+##  Solution
 
 Organize files by **feature** rather than **type** for larger projects, and always separate concerns into distinct layers.
 
-## 💻 Example
+##  Example
 
 ### By Type (Small Projects)
 ```
@@ -76,7 +76,7 @@ import LoginForm from '@/features/auth/components/LoginForm';
 import { useAuth } from '@/features/auth/hooks/useAuth';
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Rules of Thumb
 1. **Co-locate related files** — if you change X and always change Y, they belong together
@@ -84,7 +84,7 @@ import { useAuth } from '@/features/auth/hooks/useAuth';
 3. **Index files** for public API of a feature
 4. **Shared vs feature** — if it's used by 3+ features, it's shared
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Naming Conventions](naming-conventions.md)
 - [Refactoring Techniques](refactoring-techniques.md)

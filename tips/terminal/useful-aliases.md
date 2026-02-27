@@ -1,14 +1,14 @@
 # Useful Terminal Aliases
 
-## 🎯 Problem
+##  Problem
 
 You type the same long commands dozens of times a day: `ls -la`, `cd ..`, `git status`. Your fingers are tired.
 
-## ✨ Solution
+##  Solution
 
 Add shell aliases for your most-used commands. A one-time 5-minute setup eliminates thousands of keystrokes.
 
-## 💻 Example
+##  Example
 
 ```bash
 # ~/.bashrc or ~/.zshrc
@@ -82,7 +82,7 @@ source ~/.bashrc
 # or just open a new terminal
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Functions > Aliases for complex commands
 ```bash
@@ -94,7 +94,7 @@ mkcd my-new-project  # creates and enters directory
 backup config.json   # creates config.json.bak
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Command History](command-history.md)
 - [Customizing Prompt](customizing-prompt.md)

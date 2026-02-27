@@ -1,14 +1,14 @@
 # Security Best Practices
 
-## 🎯 Problem
+##  Problem
 
 Security is often treated as an afterthought. Vulnerabilities like injection attacks, broken authentication, and exposed secrets end up in production code and cause breaches.
 
-## ✨ Solution
+##  Solution
 
 Build security in from the start. Follow the principle of least privilege, validate all input, never trust the client, and keep secrets secret.
 
-## 💻 Example
+##  Example
 
 ### Input Validation & Sanitization
 ```javascript
@@ -17,7 +17,7 @@ const user = await db.query(
   `SELECT * FROM users WHERE email = '${req.body.email}'`
 );
 
-// ✅ Parameterized queries (node-postgres example)
+//  Parameterized queries (node-postgres example)
 const user = await db.query(
   'SELECT * FROM users WHERE email = $1',
   [req.body.email]
@@ -26,7 +26,7 @@ const user = await db.query(
 // ❌ Vulnerable to XSS
 document.getElementById('output').innerHTML = userInput;
 
-// ✅ Use textContent or DOM methods
+//  Use textContent or DOM methods
 document.getElementById('output').textContent = userInput;
 // Or if you need HTML: use a library like DOMPurify
 import DOMPurify from 'dompurify';
@@ -41,7 +41,7 @@ const jwt = require('jsonwebtoken');
 // ❌ Never store plaintext passwords
 users.create({ email, password });
 
-// ✅ Hash passwords with bcrypt (cost factor 12+)
+//  Hash passwords with bcrypt (cost factor 12+)
 const salt = await bcrypt.genSalt(12);
 const hash = await bcrypt.hash(password, salt);
 users.create({ email, passwordHash: hash });
@@ -62,15 +62,15 @@ const accessToken = jwt.sign(
 # ❌ Never hardcode secrets
 const API_KEY = 'sk-abc123-real-key-here';
 
-# ✅ Use environment variables
+#  Use environment variables
 const API_KEY = process.env.STRIPE_API_KEY;
 
-# ✅ .env file (never commit to git!)
+#  .env file (never commit to git!)
 STRIPE_API_KEY=sk-test-...
 JWT_SECRET=long-random-string-here
 DATABASE_URL=postgres://...
 
-# ✅ Commit an EXAMPLE file
+#  Commit an EXAMPLE file
 # .env.example (safe to commit)
 STRIPE_API_KEY=your_key_here
 JWT_SECRET=your_secret_here
@@ -92,7 +92,7 @@ app.use(cors({
 }));
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### OWASP Top 10 Quick Reference
 1. **Injection** → Use parameterized queries
@@ -106,7 +106,7 @@ app.use(cors({
 9. **Vulnerable Dependencies** → `npm audit`, Dependabot
 10. **Insufficient Logging** → Log security events, don't log passwords
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Error Handling](error-handling.md)
 - [Performance Optimization](performance-optimization.md)

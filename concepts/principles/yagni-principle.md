@@ -1,12 +1,12 @@
 # YAGNI Principle
 
-## 📖 Definition
+##  Definition
 
 **YAGNI (You Aren't Gonna Need It)** is a principle of Extreme Programming (XP) that states: always implement things when you actually need them, **never when you just foresee that you might need them**.
 
 Coined by Ron Jeffries, it's a safeguard against over-engineering.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Speculative features:
 - Add maintenance burden for code never used
@@ -14,7 +14,7 @@ Speculative features:
 - Waste time that could be spent on real features
 - Often implement requirements incorrectly (requirements change!)
 
-## 💻 Examples
+##  Examples
 
 ### YAGNI in API Design
 ```javascript
@@ -28,7 +28,7 @@ class UserService {
   async archiveInactiveUsers(days) { /* future feature? */ }
 }
 
-// ✅ YAGNI: implement only what's currently required
+//  YAGNI: implement only what's currently required
 class UserService {
   async getUser(id) { /* ← actually needed now */ }
   async createUser(data) { /* ← actually needed now */ }
@@ -54,7 +54,7 @@ CREATE TABLE users (
     newsletter_topic_2 VARCHAR(50)
 );
 
--- ✅ Add columns when requirements are confirmed
+--  Add columns when requirements are confirmed
 CREATE TABLE users (
     id BIGINT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
@@ -64,12 +64,12 @@ CREATE TABLE users (
 -- Add social_logins table and preferences table when actually needed
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"YAGNI means no forward planning"** — YAGNI targets *implementation*, not *design*. You can design extensible systems without implementing unused features.
 2. **"YAGNI and DRY conflict"** — They complement each other. DRY: don't repeat what you have now. YAGNI: don't add what you don't have yet.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [KISS Principle](kiss-principle.md)
 - [DRY Principle](dry-principle.md)

@@ -2,7 +2,7 @@
 
 In-depth tutorials and comprehensive guides.
 
-## 📚 Categories
+##  Categories
 
 ### [Getting Started](getting-started/)
 Essential guides for beginners.
@@ -22,7 +22,7 @@ Making applications faster.
 ### [Security](security/)
 Building secure applications.
 
-## 🎯 Reading Order
+##  Reading Order
 
 **Beginners:**
 1. Setting up development environment

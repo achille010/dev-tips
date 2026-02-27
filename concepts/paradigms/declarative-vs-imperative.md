@@ -1,18 +1,18 @@
 # Declarative vs Imperative Programming
 
-## 📖 Definition
+##  Definition
 
 - **Imperative**: Describes **HOW** to do something — explicit step-by-step instructions
 - **Declarative**: Describes **WHAT** you want — the system figures out how
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Understanding this distinction helps you choose the right tool:
 - SQL, HTML, CSS, React JSX → declarative
 - C, Python loops, shell scripts → imperative
 - Most real-world code mixes both
 
-## 💻 Examples
+##  Examples
 
 ### Same Problem, Two Styles
 ```javascript
@@ -65,12 +65,12 @@ function UserList({ users, filter }) {
 // React handles the HOW (DOM diffing, updates)
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Declarative is always better"** — Declarative abstractions can hide performance issues. Sometimes you need imperative control (tight loops, memory management).
 2. **"You must choose one style"** — All modern languages support both. Use declarative for clarity where possible, imperative when you need fine-grained control.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Functional Programming](functional-programming.md)
 - [Object-Oriented Programming](object-oriented-programming.md)

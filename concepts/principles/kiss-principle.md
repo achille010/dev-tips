@@ -1,12 +1,12 @@
 # KISS Principle
 
-## 📖 Definition
+##  Definition
 
 **KISS (Keep It Simple, Stupid)** is a design principle stating that most systems work best if they are kept simple rather than made complicated. Simplicity should be a key goal, and unnecessary complexity should be avoided.
 
 Originated in the U.S. Navy in 1960, popularized in software by Kelly Johnson.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Complex code:
 - Is harder to understand and onboard new developers
@@ -14,7 +14,7 @@ Complex code:
 - Breaks more often and in unexpected ways
 - Takes longer to maintain and extend
 
-## 💻 Examples
+##  Examples
 
 ### Over-Engineering vs Simple Solution
 ```javascript
@@ -40,14 +40,14 @@ class NumberEvenChecker {
 const checker = new NumberEvenChecker(4);
 console.log(checker.performEvenCheck()); // true
 
-// ✅ KISS: one line
+//  KISS: one line
 const isEven = n => n % 2 === 0;
 console.log(isEven(4)); // true
 ```
 
 ### Simple Routing vs Complex Framework
 ```python
-# ✅ KISS for a simple 3-page internal tool
+#  KISS for a simple 3-page internal tool
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 class SimpleHandler(BaseHTTPRequestHandler):
@@ -68,12 +68,12 @@ class SimpleHandler(BaseHTTPRequestHandler):
 # Use them when complexity justifies it
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Simple means naive or poorly designed"** — Simple code can be highly sophisticated. Simplicity takes skill; complexity is the easy default.
 2. **"KISS means avoid all abstractions"** — Appropriate abstraction reduces cognitive complexity. KISS means *unnecessary* complexity, not all complexity.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [DRY Principle](dry-principle.md)
 - [YAGNI Principle](yagni-principle.md)

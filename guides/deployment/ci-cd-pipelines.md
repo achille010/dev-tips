@@ -1,16 +1,16 @@
 # CI/CD Pipelines
 
-## 📖 Overview
+##  Overview
 
 **CI/CD (Continuous Integration / Continuous Deployment)** automates the process of testing and deploying your application every time code is pushed. This guide covers setting up a complete CI/CD pipeline using GitHub Actions.
 
-## 🎯 Prerequisites
+##  Prerequisites
 
 - Git and GitHub account
 - A Node.js or Python project
 - Basic understanding of YAML syntax
 
-## 📋 Steps
+##  Steps
 
 ### Step 1: Understanding CI vs CD
 
@@ -118,27 +118,27 @@ ${{ secrets.VERCEL_TOKEN }}
 ```
 GitHub → Settings → Branches → Add rule for 'main':
 ✅ Require status checks to pass before merging
-  ✅ test (node 18.x)
-  ✅ test (node 20.x)
+✅ test (node 18.x)
+✅ test (node 20.x)
 ✅ Require branches to be up to date before merging
 ✅ Require pull request reviews before merging
 ✅ Do not allow bypassing the above settings
 ```
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 1. **Using `npm install` instead of `npm ci`** in CI — `npm ci` installs exactly from `package-lock.json`
 2. **Not caching dependencies** — add `cache: 'npm'` to `setup-node` to avoid re-downloading
 3. **Secrets in workflow logs** — GitHub masks strings matching secrets, but don't `echo ${{ secrets.X }}`
 
-## ✅ Best Practices
+##  Best Practices
 
 - Run tests in parallel where possible (`matrix` strategy)
 - Cache `node_modules` between runs
 - Fail fast on linter errors before running expensive tests
 - Deploy to staging first, then production
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Docker Basics](docker-basics.md)
 - [Environment Management](environment-management.md)
