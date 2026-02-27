@@ -1,12 +1,12 @@
 # Procedural Programming
 
-## 📖 Definition
+##  Definition
 
 **Procedural Programming** is a paradigm derived from structured programming, based on the concept of the **procedure call**. A program is a sequence of instructions (procedures/functions) that execute in order, operating on shared data.
 
 It's the foundation of C, Pascal, and early BASIC, and remains relevant in scripts, systems programming, and data pipelines.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Procedural code is:
 - **Simple and direct** — easy to trace execution flow
@@ -14,7 +14,7 @@ Procedural code is:
 - **Universal** — all programmers understand sequential logic
 - **C/systems** — OS kernels, embedded systems use procedural style
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Classic Procedural Style (C-like JavaScript)
 ```javascript
@@ -96,13 +96,13 @@ def main():
 main()
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Procedural means spaghetti code"** — With proper function decomposition and module organization, procedural code can be very clean and maintainable.
 2. **"OOP replaced procedural programming"** — They coexist. Python and JavaScript are multi-paradigm, and most code mixes procedural and OOP style naturally.
 3. **"Procedural doesn't scale"** — Linux kernel, Redis, SQLite — all written in procedural C and scale to billions of users.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Object-Oriented Programming](object-oriented-programming.md)
 - [Functional Programming](functional-programming.md)

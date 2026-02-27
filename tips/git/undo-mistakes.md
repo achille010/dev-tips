@@ -1,14 +1,14 @@
 # Undo Mistakes in Git
 
-## 🎯 Problem
+##  Problem
 
 You accidentally committed to the wrong branch, pushed sensitive data, or made changes you need to undo. Git has many undo mechanisms but they're confusing to distinguish.
 
-## ✨ Solution
+##  Solution
 
 Match the undo operation to the situation. Git mistakes are almost always recoverable.
 
-## 💻 Example
+##  Example
 
 ### Uncommitted Changes
 ```bash
@@ -37,7 +37,7 @@ git commit --amend -m "New correct message"
 git add forgotten-file.js
 git commit --amend --no-edit   # uses existing message
 
-# ⚠️ Don't amend commits you've already pushed to shared branches!
+#  Don't amend commits you've already pushed to shared branches!
 ```
 
 ### Undoing Recent Commits
@@ -78,7 +78,7 @@ git reset --hard HEAD@{1}
 git checkout -b recovery HEAD@{1}
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Decision Tree
 ```
@@ -90,13 +90,13 @@ Did you push?
 ```
 
 ### reset vs revert
-| | `reset` | `revert` |
-|-|---------|----------|
-| History | Rewrites it | Adds to it |
-| Shared branches | ❌ Dangerous | ✅ Safe |
-| Undone how | Moves HEAD back | New commit |
+|                 | `reset`         | `revert`   |
+|-----------------|-----------------|------------|
+| History         | Rewrites it     | Adds to it |
+| Shared branches | ❌ Dangerous     | ✅ Safe    |
+| Undone how      | Moves HEAD back | New commit |
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Interactive Rebase](interactive-rebase.md)
 - [Bisect for Debugging](bisect-for-debugging.md)

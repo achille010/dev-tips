@@ -1,14 +1,14 @@
 # Performance Optimization
 
-## 🎯 Problem
+##  Problem
 
 Your application feels slow. Pages take forever to load, API calls pile up, and users are leaving. You need to identify and fix performance bottlenecks.
 
-## ✨ Solution
+##  Solution
 
 Profile first, then optimize. Focus on the biggest wins: reduce network requests, cache aggressively, and avoid unnecessary work.
 
-## 💻 Example
+##  Example
 
 ### Frontend Performance
 ```javascript
@@ -18,7 +18,7 @@ for (const post of posts) {
   post.author = await getUser(post.authorId); // N separate API calls!
 }
 
-// ✅ Batch fetch: one query
+//  Batch fetch: one query
 const posts = await getPosts();
 const authorIds = [...new Set(posts.map(p => p.authorId))];
 const authors = await getUsers(authorIds); // one query
@@ -56,13 +56,13 @@ function SearchBar() {
 -- ❌ Full table scan every request
 SELECT * FROM orders WHERE email = 'user@example.com';
 
--- ✅ Add an index on frequently queried columns
+--  Add an index on frequently queried columns
 CREATE INDEX idx_orders_email ON orders(email);
 
 -- ❌ SELECT * fetches unused columns
 SELECT * FROM users;
 
--- ✅ SELECT only what you need
+--  SELECT only what you need
 SELECT id, name, email FROM users;
 ```
 
@@ -83,7 +83,7 @@ async function getCachedUser(id) {
 }
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Performance Checklist
 - [ ] Profile before optimizing (measure, don't guess)
@@ -94,7 +94,7 @@ async function getCachedUser(id) {
 - [ ] Lazy load images and non-critical JavaScript
 - [ ] CDN for static assets
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Security Best Practices](security-best-practices.md)
 - [Testing Tips](testing-tips.md)

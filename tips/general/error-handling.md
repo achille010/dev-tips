@@ -1,14 +1,14 @@
 # Error Handling
 
-## 🎯 Problem
+##  Problem
 
 Your app crashes with an unhelpful "undefined" error, or swallows errors silently and continues in a broken state. Users see white screens; you have no idea what went wrong.
 
-## ✨ Solution
+##  Solution
 
 Handle errors explicitly, provide context in error messages, and fail loudly in development while failing gracefully in production.
 
-## 💻 Example
+##  Example
 
 ### JavaScript — Try/Catch/Finally
 ```javascript
@@ -19,7 +19,7 @@ async function getUser(id) {
   return data;
 }
 
-// ✅ Explicit error handling with context
+//  Explicit error handling with context
 async function getUser(id) {
   if (!id) throw new TypeError('getUser: id is required');
 
@@ -125,7 +125,7 @@ except AppError as e:
     return jsonify({"error": str(e), "code": e.code}), 404
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Principles
 1. **Fail loudly in dev, gracefully in prod** — raise errors during development; show friendly messages to users
@@ -133,7 +133,7 @@ except AppError as e:
 3. **Don't swallow errors** — `catch(e) {}` is almost always wrong
 4. **Use custom error classes** — allows catch-by-type
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Testing Tips](testing-tips.md)
 - [Security Best Practices](security-best-practices.md)

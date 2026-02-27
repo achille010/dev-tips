@@ -1,10 +1,10 @@
 # Sorting Algorithms
 
-## 📖 Definition
+##  Definition
 
 A **sorting algorithm** arranges elements of a list in a particular order (ascending, descending, or custom). Sorting is one of the most fundamental operations in computer science, enabling efficient searching, merging, and data presentation.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Sorting is a prerequisite for:
 - Binary search (requires sorted data)
@@ -12,7 +12,7 @@ Sorting is a prerequisite for:
 - Finding duplicates or closest pairs
 - Data visualization and reporting
 
-## 🔍 Common Sorting Algorithms
+##  Common Sorting Algorithms
 
 ### Comparison Table
 
@@ -26,7 +26,7 @@ Sorting is a prerequisite for:
 | Heap Sort      | O(n log n)| O(n log n)| O(n log n)| O(1)| ❌   |
 | Counting Sort  | O(n+k)  | O(n+k)   | O(n+k)   | O(k)   | ✅     |
 
-## 💻 Examples
+##  Examples
 
 ### Merge Sort (JavaScript)
 ```javascript
@@ -83,13 +83,13 @@ function insertionSort(arr) {
 }
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Quick sort is always fastest"** — Quick sort is O(n²) worst case (bad pivot). For reliability, use merge sort or Timsort (Python's default).
 2. **"Stable sort doesn't matter"** — It matters when sorting objects by multiple keys. An unstable sort may scramble previous orderings.
 3. **"Built-in sort is always the best choice"** — Usually yes, but for specialized cases (nearly sorted, tiny arrays), a custom algorithm may win.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Searching Algorithms](searching-algorithms.md)
 - [Big-O Notation](big-o-notation.md)

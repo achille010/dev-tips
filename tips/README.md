@@ -28,7 +28,7 @@ Code organization and best practices.
 - Documentation tips
 - Productivity hacks
 
-## 💡 How to Use
+##  How to Use
 
 1. Browse by category
 2. Read 5-10 minute tips

@@ -1,6 +1,6 @@
 # Error: Cannot read property / Cannot read properties of undefined
 
-## 🔴 The Error
+##  The Error
 
 ```
 TypeError: Cannot read properties of undefined (reading 'name')
@@ -8,14 +8,14 @@ TypeError: Cannot read property 'name' of null
 TypeError: Cannot read property 'map' of undefined
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Async data not loaded yet** — rendering before data arrives
 2. **Missing null check** — assuming a value exists when it might not
 3. **Wrong API response shape** — expecting `data.user` but getting `data`
 4. **Typo in property name** — accessing `user.naem` instead of `user.name`
 
-## ⚡ Quick Fix
+##  Quick Fix
 
 Add a null/undefined check before accessing the property:
 ```javascript
@@ -27,7 +27,7 @@ console.log(user?.name);        // Optional chaining
 console.log(user && user.name); // Short-circuit (ES5)
 ```
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Solution 1: Optional Chaining (?.)
 ```javascript
@@ -36,7 +36,7 @@ const name = user.name;
 const city = user.address.city;
 const count = items.length;
 
-// ✅ Safe with optional chaining
+//  Safe with optional chaining
 const name  = user?.name;
 const city  = user?.address?.city;
 const count = items?.length ?? 0;
@@ -76,7 +76,7 @@ function UserProfile({ userId }) {
 }
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - Use TypeScript to catch null-related errors at compile time
 - Always initialize state with sensible defaults

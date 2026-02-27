@@ -2,7 +2,7 @@
 
 Common JavaScript errors and how to fix them.
 
-## 📖 Available Guides
+##  Available Guides
 
 - [undefined is not a function](undefined-is-not-a-function.md)
 - [Cannot read property](cannot-read-property.md)

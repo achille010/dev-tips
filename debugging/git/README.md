@@ -2,7 +2,7 @@
 
 Common Git errors and how to resolve them.
 
-## 📖 Available Guides
+##  Available Guides
 
 - [Merge Conflicts](merge-conflicts.md)
 - [Detached HEAD State](detached-head-state.md)

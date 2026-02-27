@@ -1,17 +1,17 @@
 # Arrays and Lists
 
-## 📖 Definition
+##  Definition
 
 Arrays and lists are the most fundamental data structures — they store collections of elements in sequential order. An **array** is a fixed-size, contiguous block of memory, while a **list** (or dynamic array) can grow or shrink at runtime.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Nearly every program manipulates collections of data. Understanding arrays and lists is essential for:
 - Iterating over datasets
 - Storing ordered information
 - Accessing elements by index in O(1) time
 
-## 🔍 How It Works
+##  How It Works
 
 ### Static Arrays
 A static array allocates a fixed amount of memory when created. The index maps directly to a memory address, making reads extremely fast.
@@ -38,7 +38,7 @@ Dynamic arrays start with a capacity and double it when full — a process calle
 
 *amortized
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: JavaScript
 ```javascript
@@ -98,13 +98,13 @@ list.remove(1); // removes index 1 (value 20)
 System.out.println(list.get(0)); // 10
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Arrays and lists are the same"** — Arrays are fixed-size with O(1) access; list is an abstract data type that may use arrays or linked lists internally.
 2. **"Insertion is always O(1)"** — Only at the end. Inserting at the beginning or middle is O(n) due to shifting.
 3. **"Python lists are linked lists"** — False. Python lists are dynamic arrays (similar to Java's ArrayList).
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Hash Tables](hash-tables.md)
 - [Linked Lists](linked-lists.md)

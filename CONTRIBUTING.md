@@ -1,6 +1,6 @@
 # Contributing to dev-tips
 
-## 🎯 Types of Contributions
+##  Types of Contributions
 
 - **Tips**: 200-500 word quick advice
 - **Guides**: 1000+ word tutorials
@@ -9,7 +9,7 @@
 - **Tools**: Tool recommendations
 - **Resources**: Curated links
 
-## 📝 Content Guidelines
+##  Content Guidelines
 
 ### Writing Style
 - Clear and concise
@@ -29,7 +29,7 @@
 - Proofread for errors
 - Use inclusive language
 
-## 🔄 Submission Process
+##  Submission Process
 
 1. **Fork** the repository
 2. **Create branch**: `git checkout -b feature/your-contribution`
@@ -39,13 +39,13 @@
 6. **Push**: `git push origin feature/your-contribution`
 7. **Open Pull Request** with clear description
 
-## 📋 File Naming
+##  File Naming
 
 - Use kebab-case: `my-new-tip.md`
 - Be descriptive: `fixing-merge-conflicts.md` not `fix.md`
 - Match content: filename should reflect the title
 
-## ✅ Before Submitting
+##  Before Submitting
 
 - [ ] Content follows guidelines
 - [ ] All code examples tested

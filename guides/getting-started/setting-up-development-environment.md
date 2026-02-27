@@ -1,16 +1,16 @@
 # Setting Up Your Development Environment
 
-## 📖 Overview
+##  Overview
 
 This guide walks you through setting up a professional development environment from scratch. By the end, you'll have a working terminal, code editor, version control, and Node.js environment ready for modern web development.
 
 **Who this is for:** Complete beginners or developers setting up a new machine.
 
-## 🎯 Prerequisites
+##  Prerequisites
 
 No prior experience needed, just a computer with internet access.
 
-## 📋 Steps
+##  Steps
 
 ### Step 1: Install a Package Manager
 
@@ -122,13 +122,13 @@ npm install -g nodemon          # auto-restart Node.js apps
 npm install -g http-server      # quick local servers
 ```
 
-## ⚠️ Common Pitfalls
+##  Common Pitfalls
 
 - **Permission errors with npm** — Never use `sudo npm install -g`. Use nvm instead.
 - **Git identity not set** — Commits will fail without `user.name` and `user.email`
 - **Wrong Node version** — Use `nvm use <version>` to match project's `.nvmrc`
 
-## ✅ Verification
+##  Verification
 
 ```bash
 git --version           # git 2.x.x
@@ -138,7 +138,7 @@ code --version          # 1.x.x
 ssh -T git@github.com   # authenticates
 ```
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Git Basics for Beginners](git-basics-for-beginners.md)
 - [Understanding the Terminal](understanding-the-terminal.md)

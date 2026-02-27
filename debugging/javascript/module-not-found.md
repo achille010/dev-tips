@@ -1,6 +1,6 @@
 # Error: Module Not Found (JavaScript)
 
-## 🔴 The Error
+##  The Error
 
 ```
 Error: Cannot find module './utils'
@@ -8,14 +8,14 @@ Error: Cannot find module 'express'
 Module not found: Error: Can't resolve '@/components/Button'
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Package not installed** — forgot `npm install`
 2. **Wrong path** — typo in import path or wrong relative/absolute path
 3. **Wrong casing** — `import Button from './button'` but file is `Button.jsx`
 4. **Path alias not configured** — `@/` alias not set up in bundler
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Solution 1: Package Not Installed
 ```bash
@@ -37,7 +37,7 @@ npm install
 import { helper } from '../utils';    // file is at ./utils
 import Button from './components/btn'; // file is Button.jsx
 
-// ✅ Correct
+//  Correct
 import { helper } from './utils';
 import Button from './components/Button';
 
@@ -74,14 +74,14 @@ export default {
 // ❌ CommonJS require in ESM project
 const express = require('express'); // error if "type":"module" in package.json
 
-// ✅ Use import
+//  Use import
 import express from 'express';
 
 // Or add to package.json to use CommonJS:
 { "type": "commonjs" }
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - Always run `npm install` after cloning a repo
 - Use IDE path autocompletion to avoid typos

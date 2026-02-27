@@ -1,6 +1,6 @@
 # Error: IndentationError
 
-## 🔴 The Error
+##  The Error
 
 ```
 IndentationError: unexpected indent
@@ -8,14 +8,14 @@ IndentationError: expected an indented block
 TabError: inconsistent use of tabs and spaces in indentation
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Mixed tabs and spaces** — most common cause of `TabError`
 2. **Wrong indentation level** — indented too much or too little
 3. **Missing block body** — empty `if/for/while` block without `pass`
 4. **Copy-paste with different indentation**
 
-## ⚡ Quick Fix
+##  Quick Fix
 
 ```bash
 # Convert all tabs to spaces (4 spaces per tab)
@@ -29,7 +29,7 @@ pip install autopep8
 autopep8 --in-place file.py
 ```
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Solution 1: Use Spaces (Not Tabs) Consistently
 ```python
@@ -38,7 +38,7 @@ def greet(name):
 	print("Hello")      # ← tab
     print(name)         # ← spaces
 
-# ✅ All spaces (4 per level is PEP 8 standard)
+#  All spaces (4 per level is PEP 8 standard)
 def greet(name):
     print("Hello")
     print(name)
@@ -51,7 +51,7 @@ def future_feature():
 
 for item in items:
 
-# ✅ Use pass as placeholder
+#  Use pass as placeholder
 def future_feature():
     pass
 
@@ -71,7 +71,7 @@ VSCode settings (settings.json):
 }
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - Configure your editor to use spaces for Python
 - Use a linter: `flake8` or `pylint`

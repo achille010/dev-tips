@@ -2,7 +2,7 @@
 
 Development tools, extensions, and productivity software.
 
-## 🛠️ Categories
+##  Categories
 
 ### [Editors](editors/)
 Code editors and IDEs.
@@ -19,7 +19,7 @@ Tools to boost efficiency.
 ### [Browser](browser/)
 Browser tools for web development.
 
-## 🎯 Popular Tools
+##  Popular Tools
 
 **Editors:**
 - VS Code

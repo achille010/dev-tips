@@ -1,12 +1,12 @@
 # REST API Design
 
-## 📖 Definition
+##  Definition
 
 **REST (Representational State Transfer)** is an architectural style for distributed hypermedia systems. A RESTful API exposes resources via HTTP and uses standard HTTP methods to perform CRUD operations.
 
 The six REST constraints: **Client-Server, Stateless, Cacheable, Uniform Interface, Layered System, Code on Demand (optional)**.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 REST is the dominant API style for web services because:
 - Uses existing HTTP infrastructure
@@ -14,7 +14,7 @@ REST is the dominant API style for web services because:
 - Stateless → easy to scale horizontally
 - Works with any client (browser, mobile, IoT)
 
-## 🔍 Core Concepts
+##  Core Concepts
 
 ### Resources and URLs
 ```
@@ -28,20 +28,20 @@ Delete:      DELETE /users/{id}     ← delete user
 ```
 
 ### HTTP Status Codes
-| Code | Meaning | When to Use |
-|------|---------|-------------|
-| 200 | OK | Successful GET, PATCH |
-| 201 | Created | Successful POST |
-| 204 | No Content | Successful DELETE |
-| 400 | Bad Request | Invalid input |
-| 401 | Unauthorized | Not authenticated |
-| 403 | Forbidden | Not authorized |
-| 404 | Not Found | Resource doesn't exist |
-| 409 | Conflict | Duplicate resource |
-| 422 | Unprocessable | Validation failed |
-| 500 | Internal Error | Server bug |
+│ Code │ Meaning        │ When to Use            │
+│------│----------------│------------------------│
+│ 200  │ OK             │ Successful GET, PATCH  │
+│ 201  │ Created        │ Successful POST        │
+│ 204  │ No Content     │ Successful DELETE      │
+│ 400  │ Bad Request    │ Invalid input          │
+│ 401  | Unauthorized   │ Not authenticated      │
+│ 403  │ Forbidden      │ Not authorized         │
+│ 404  │ Not Found      │ Resource doesn't exist │
+│ 409  │ Conflict       │ Duplicate resource     │
+│ 422  │ Unprocessable  │ Validation failed      │
+│ 500  │ Internal Error │ Server bug             │
 
-## 💻 Examples
+##  Examples
 
 ### RESTful Express API
 ```javascript
@@ -94,17 +94,17 @@ router.delete('/:id', async (req, res) => {
 /api/v2/users   ← new version with breaking changes
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"REST requires JSON"** — REST is format-agnostic. XML, YAML, or even plain text are valid.
 2. **"REST is the same as CRUD"** — REST maps nicely to CRUD, but it's about resource state, not database operations.
 3. **"REST is outdated — use GraphQL"** — REST and GraphQL serve different needs. REST excels for simple resource-based APIs; GraphQL for complex, client-driven queries.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [MVC Architecture](mvc-architecture.md)
 - [Microservices](microservices.md)
 
 ---
 
-[← Back to Architecture](../README.md) | [← Back to Concepts](../../README.md)
+[← Back to Architecture](../README.md) │ [← Back to Concepts](../../README.md)

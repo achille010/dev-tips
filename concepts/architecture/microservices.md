@@ -1,10 +1,10 @@
 # Microservices
 
-## 📖 Definition
+##  Definition
 
 **Microservices** is an architectural style that structures an application as a collection of small, independent services, each running in its own process and communicating through well-defined APIs (typically HTTP/REST or message queues).
 
-## 🔍 Microservices vs Monolith
+##  Microservices vs Monolith
 
 | Aspect | Monolith | Microservices |
 |--------|----------|---------------|
@@ -15,7 +15,7 @@
 | Complexity | Initially simpler | Higher operational complexity |
 | Fault isolation | One bug can crash all | Failures are contained |
 
-## 💻 Example Structure
+##  Example Structure
 
 ```
 e-commerce-platform/
@@ -54,12 +54,12 @@ services:
       POSTGRES_DB: users
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Always use microservices for scalability"** — Start with a monolith, split into microservices when scaling or team boundaries demand it (Martin Fowler's "MonolithFirst").
 2. **"Microservices = Docker containers"** — They're complementary. Microservices is an architecture; containers are a deployment mechanism.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Monolithic Architecture](monolithic-architecture.md)
 - [MVC Architecture](mvc-architecture.md)

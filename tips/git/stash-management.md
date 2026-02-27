@@ -1,14 +1,14 @@
 # Stash Management
 
-## 🎯 Problem
+##  Problem
 
 You're in the middle of working on a feature when an urgent bug fix request comes in. You don't want to commit unfinished work, but you also don't want to lose it. You need a way to save your work temporarily.
 
-## ✨ Solution
+##  Solution
 
 `git stash` saves your uncommitted changes to a stack, leaving a clean working directory so you can switch contexts. You can apply the saved stash later.
 
-## 💻 Example
+##  Example
 
 ```bash
 # Save current changes (tracked files)
@@ -56,7 +56,7 @@ git stash drop stash@{1}
 git stash clear
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Stash is a Stack (LIFO)
 Each stash push goes on top. `git stash pop` removes from the top. Use index notation (`stash@{n}`) to access specific entries.
@@ -77,7 +77,7 @@ stash@{0}: WIP on feature/login: a1b2c3d Add login form
             └── Index (0 = newest)
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Interactive Rebase](interactive-rebase.md)
 - [Branch Strategies](branch-strategies.md)

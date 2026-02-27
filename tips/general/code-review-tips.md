@@ -1,14 +1,14 @@
 # Code Review Tips
 
-## 🎯 Problem
+##  Problem
 
 Code reviews are either rubber stamps ("LGTM") that miss real issues, or brutal critiques that demoralize contributors. Neither makes the codebase better.
 
-## ✨ Solution
+##  Solution
 
 Approach code reviews with curiosity and empathy. Focus on the code, not the person. Use a structured review process.
 
-## 💻 Example
+##  Example
 
 ### What to Look For (Reviewer Checklist)
 
@@ -96,7 +96,7 @@ Link to ticket: Closes #123
 - [ ] No breaking changes (or documented)
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Testing Tips](testing-tips.md)
 - [Documentation Tips](documentation-tips.md)

@@ -2,7 +2,7 @@
 
 Command line productivity and shortcuts.
 
-## 📖 Available Tips
+##  Available Tips
 
 - [Keyboard Shortcuts](keyboard-shortcuts.md) - Navigate faster with shortcuts
 - [Command History](command-history.md) - Reuse and search previous commands
@@ -14,7 +14,7 @@ Command line productivity and shortcuts.
 - [Customizing Prompt](customizing-prompt.md) - Make your shell your own
 - [Useful Aliases](useful-aliases.md) - Terminal shortcuts
 
-## 🎯 Quick Reference
+##  Quick Reference
 
 **Daily essentials:**
 1. Keyboard shortcuts

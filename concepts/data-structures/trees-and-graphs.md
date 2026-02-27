@@ -1,19 +1,19 @@
 # Trees and Graphs
 
-## 📖 Definition
+##  Definition
 
 **Trees** and **graphs** are non-linear data structures that represent hierarchical and networked relationships.
 
 - A **tree** is an acyclic, connected graph with a designated root node and parent-child relationships.
 - A **graph** is a collection of nodes (vertices) connected by edges, which may contain cycles.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 These structures model real-world relationships:
 - **Trees**: File systems, DOM, organization charts, decision trees, BSTs for fast search
 - **Graphs**: Social networks, road maps, dependency resolution, web crawling
 
-## 🔍 How It Works
+##  How It Works
 
 ### Tree Terminology
 ```
@@ -68,7 +68,7 @@ D[0,1,1,0,0]
 E[0,0,1,0,0]
 ```
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Binary Tree Traversals (JavaScript)
 ```javascript
@@ -146,13 +146,13 @@ def dfs(graph, node, visited=None):
 print(bfs(graph, 'A'))  # ['A', 'B', 'C', 'D', 'E']
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Trees are a subset of graphs"** — True! A tree is an acyclic undirected connected graph.
 2. **"BSTs always give O(log n) search"** — Only for balanced trees. An unbalanced BST degrades to O(n). Use AVL or Red-Black trees for guaranteed O(log n).
 3. **"DFS always finds the shortest path"** — BFS finds the shortest path in unweighted graphs. DFS does not guarantee shortest path.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Linked Lists](linked-lists.md)
 - [Sorting Algorithms](../algorithms/sorting-algorithms.md)

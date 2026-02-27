@@ -8,7 +8,7 @@
 
 A comprehensive collection of programming tips, guides, and best practices for developers.
 
-## 🎯 What's Inside
+##  What's Inside
 
 - **[Concepts](concepts/)** - Programming fundamentals and theory
 - **[Tips](tips/)** - Quick, actionable advice
@@ -17,7 +17,7 @@ A comprehensive collection of programming tips, guides, and best practices for d
 - **[Tools](tools/)** - Development tool recommendations
 - **[Resources](resources/)** - Curated learning materials
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### For Beginners
 1. Start with [Getting Started Guides](guides/getting-started/)
@@ -34,7 +34,7 @@ A comprehensive collection of programming tips, guides, and best practices for d
 2. Optimize with [Performance Guides](guides/performance/)
 3. Share your expertise by [Contributing](CONTRIBUTING.md)
 
-## 📚 How to Navigate
+##  How to Navigate
 
 Each section has its own README.md with an index of available content:
 
@@ -42,17 +42,17 @@ Each section has its own README.md with an index of available content:
 - Use GitHub search to find specific topics
 - Follow links between related topics
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## 📖 Reading Guide
+##  Reading Guide
 
 - **Tips**: 5-10 minute reads for quick insights
 - **Guides**: 20-30 minute deep dives
 - **Concepts**: Understand the "why" behind the "how"
 
-## 📜 License
+##  License
 
 MIT License - see [LICENSE](LICENSE) for details.
 

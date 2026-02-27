@@ -1,14 +1,14 @@
 # Process Management
 
-## 🎯 Problem
+##  Problem
 
 A process is hanging, consuming too much CPU, running on a port you need, or you want to run a task in the background. You need to view, control, and manage running processes.
 
-## ✨ Solution
+##  Solution
 
 Use `ps`, `top`/`htop`, `kill`, `bg`/`fg`, and `nohup` to manage processes from the terminal.
 
-## 💻 Example
+##  Example
 
 ### Viewing Processes
 ```bash
@@ -74,17 +74,17 @@ tmux new -s myserver     # start named session
 tmux attach -t myserver  # reattach later
 ```
 
-## 📝 Explanation
+##  Explanation
 
-| Signal | Number | Meaning |
-|--------|--------|---------|
-| SIGTERM | 15 | Polite stop (allows cleanup) |
-| SIGKILL | 9  | Force kill (no cleanup) |
-| SIGINT  | 2  | Interrupt (Ctrl+C) |
-| SIGSTOP | 19 | Pause process |
-| SIGCONT | 18 | Resume paused process |
+| Signal  | Number | Meaning                      |
+|---------|--------|------------------------------|
+| SIGTERM | 15     | Polite stop (allows cleanup) |
+| SIGKILL | 9      | Force kill (no cleanup)      |
+| SIGINT  | 2      | Interrupt (Ctrl+C)           |
+| SIGSTOP | 19     | Pause process                |
+| SIGCONT | 18     | Resume paused process        |
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Keyboard Shortcuts](keyboard-shortcuts.md)
 - [SSH Tips](ssh-tips.md)

@@ -2,7 +2,7 @@
 
 Language-agnostic programming concepts.
 
-## 📚 Categories
+##  Categories
 
 ### [Data Structures](data-structures/)
 Understanding how data is organized and accessed.
@@ -22,7 +22,7 @@ Guidelines for writing better code.
 ### [Architecture](architecture/)
 System design and organization patterns.
 
-## 🎯 Learning Path
+##  Learning Path
 
 1. Start with data structures
 2. Learn common algorithms

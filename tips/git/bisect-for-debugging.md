@@ -1,14 +1,14 @@
 # Bisect for Debugging
 
-## 🎯 Problem
+##  Problem
 
 A bug appeared "somewhere in the last 200 commits" but you have no idea which one introduced it. Manually checking commits one by one would take hours.
 
-## ✨ Solution
+##  Solution
 
 `git bisect` performs a **binary search** through your commit history to find the exact commit that introduced a bug. It requires only O(log n) checks — about 8 checks for 200 commits.
 
-## 💻 Example
+##  Example
 
 ```bash
 # 1. Start bisect session
@@ -55,7 +55,7 @@ git bisect run bash -c "./check_bug.sh"
 git bisect reset
 ```
 
-## 📝 Explanation
+##  Explanation
 
 With 1000 commits between good and bad: `log2(1000) ≈ 10 manual checks` vs 1000 manual checks.
 
@@ -65,7 +65,7 @@ git bisect log    # view your good/bad markings
 git bisect replay bisect.log  # replay a bisect session
 ```
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Undo Mistakes](undo-mistakes.md)
 - [Useful Aliases](useful-aliases.md)

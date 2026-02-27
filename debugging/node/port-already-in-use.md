@@ -1,20 +1,20 @@
 # Error: Port Already in Use (EADDRINUSE)
 
-## 🔴 The Error
+##  The Error
 
 ```
 Error: listen EADDRINUSE: address already in use :::3000
 Error: listen EADDRINUSE :::8080
 ```
 
-## 🤔 Common Causes
+##  Common Causes
 
 1. **Previous server process still running** — didn't properly stop it
 2. **Another application using the port** — database, system service
 3. **Multiple terminal tabs running the same server**
 4. **Zombie process** — server crashed but OS didn't release port
 
-## ⚡ Quick Fix
+##  Quick Fix
 
 ```bash
 # Kill whatever is on port 3000
@@ -28,7 +28,7 @@ netstat -ano | findstr :3000
 taskkill /PID <PID> /F
 ```
 
-## 🔧 Detailed Solution
+##  Detailed Solution
 
 ### Solution 1: Find and Kill the Process
 ```bash
@@ -69,7 +69,7 @@ process.on('SIGTERM', () => {
 });
 ```
 
-## 🛡️ Prevention
+##  Prevention
 
 - Always stop your dev server before closing the terminal (Ctrl+C)
 - Use environment variables for ports to avoid hardcoded conflicts

@@ -1,10 +1,10 @@
 # Hash Tables
 
-## 📖 Definition
+##  Definition
 
 A **hash table** (also called a hash map, dictionary, or associative array) is a data structure that maps **keys to values** using a **hash function**. It provides average O(1) time for insertions, deletions, and lookups.
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Hash tables power some of the most critical features in software:
 - Database indexing
@@ -13,7 +13,7 @@ Hash tables power some of the most critical features in software:
 - Detecting duplicates
 - Implementing sets
 
-## 🔍 How It Works
+##  How It Works
 
 ### The Hash Function
 A hash function converts a key into an array index (bucket):
@@ -44,9 +44,9 @@ When load factor exceeds ~0.75, the table resizes (doubles) and rehashes all ent
 
 | Operation | Average | Worst (all collide) |
 |-----------|---------|---------------------|
-| Insert    | O(1)    | O(n)               |
-| Delete    | O(1)    | O(n)               |
-| Search    | O(1)    | O(n)               |
+| Insert    | O(1)    | O(n)                |
+| Delete    | O(1)    | O(n)                |
+| Search    | O(1)    | O(n)                |
 
 ## 💻 Examples
 
@@ -125,13 +125,13 @@ if (scores.containsKey("Bob")) {
 }
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Hash tables always have O(1) lookup"** — Average case yes, but worst case is O(n) when all keys collide into the same bucket.
 2. **"The order of keys is preserved"** — Traditional hash maps don't guarantee order. Python dicts maintain insertion order since 3.7, but that's an implementation detail.
 3. **"Any object can be a key"** — Keys must be **hashable** (immutable). Mutable objects like Python lists can't be dict keys.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Arrays and Lists](arrays-and-lists.md)
 - [Dynamic Programming](../algorithms/dynamic-programming.md)

@@ -1,14 +1,14 @@
 # Documentation Tips
 
-## 🎯 Problem
+##  Problem
 
 Undocumented code becomes a mystery to your future self and teammates. You're spending 20 minutes reverse-engineering a function that could have been explained in 3 lines of comments.
 
-## ✨ Solution
+##  Solution
 
 Write documentation that explains **why**, not **what** (the code already shows what). Use standardized formats like JSDoc/docstrings, maintain a good README, and keep docs close to the code.
 
-## 💻 Example
+##  Example
 
 ### JSDoc (JavaScript)
 ```javascript
@@ -68,22 +68,22 @@ i++;
 // Returns the user object
 function getUsers() { return db.query('SELECT * FROM users'); }
 
-// ✅ Explains WHY (not what)
+//  Explains WHY (not what)
 // Retry up to 3 times — the auth service has intermittent flakiness
 // that typically resolves within a second (see issue #482)
 const MAX_RETRIES = 3;
 
-// ✅ Explains non-obvious behavior
+//  Explains non-obvious behavior
 // Note: We use UTC here because the admin dashboard converts to
 // local timezone on the client side (see Dashboard.jsx:47)
 const timestamp = new Date().toISOString();
 
-// ✅ TODO with context
+//  TODO with context
 // TODO(alice): Remove this workaround after API v3 migration (ETA Q2 2025)
 const data = transformLegacyResponse(response);
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### What to Document
 - **Public API** — always (JSDoc/docstrings)
@@ -96,7 +96,7 @@ const data = transformLegacyResponse(response);
 - Obvious code (`// increment counter`)
 - Private implementation details that change often
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Naming Conventions](naming-conventions.md)
 - [Code Review Tips](code-review-tips.md)

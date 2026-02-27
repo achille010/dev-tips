@@ -1,14 +1,14 @@
 # SSH Tips
 
-## 🎯 Problem
+##  Problem
 
 SSH is a powerful tool but most developers use only its most basic feature — remote login. You're typing passwords every time, or struggling with tunneling.
 
-## ✨ Solution
+##  Solution
 
 Master SSH config, key-based authentication, and tunneling to make remote work fast and secure.
 
-## 💻 Example
+##  Example
 
 ### SSH Key Authentication
 ```bash
@@ -80,7 +80,7 @@ ssh -D 1080 user@server.com
 ssh user@server.com "df -h && free -m"
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Security Best Practices
 - Use Ed25519 keys (stronger, shorter than RSA)
@@ -88,7 +88,7 @@ ssh user@server.com "df -h && free -m"
 - Use `fail2ban` to block brute force
 - Keep SSH port non-standard for reduced bot traffic
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Process Management](process-management.md)
 - [Customizing Prompt](customizing-prompt.md)

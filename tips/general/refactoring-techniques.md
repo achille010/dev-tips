@@ -1,14 +1,14 @@
 # Refactoring Techniques
 
-## 🎯 Problem
+##  Problem
 
 Your codebase has accumulated complexity — functions that are too long, logic that's duplicated, or modules that are too tightly coupled. You need to improve the code without breaking anything.
 
-## ✨ Solution
+##  Solution
 
 Refactor in small, safe steps. "Refactoring" means changing the internal structure without changing external behavior. Always have tests before refactoring.
 
-## 💻 Example
+##  Example
 
 ### Extract Function
 ```javascript
@@ -27,7 +27,7 @@ function generateInvoice(order) {
   return `Invoice #${order.id}\n${lines}\nSubtotal: $${subtotal}\nDiscount: -$${discount}\nTax: $${tax}\nShipping: $${shipping}\nTotal: $${total}`;
 }
 
-// ✅ After: extracted, focused functions
+//  After: extracted, focused functions
 function calculateSubtotal(items) {
   return items.reduce((sum, item) => sum + item.price * item.qty, 0);
 }
@@ -81,7 +81,7 @@ def calculate_area(shape):
         return 0.5 * shape.base * shape.height
     # Adding new shapes requires modifying this function!
 
-# ✅ After: each class handles its own calculation (OCP)
+#  After: each class handles its own calculation (OCP)
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
@@ -99,7 +99,7 @@ class Rectangle(Shape):
 # Adding new shape → just add a new class, no existing code changes
 ```
 
-## 📝 Explanation
+##  Explanation
 
 ### Common Refactoring Patterns
 | Pattern | When to Use |
@@ -117,7 +117,7 @@ class Rectangle(Shape):
 3. **Run tests** — must still pass
 4. **Repeat**
 
-## 🔗 Related Tips
+##  Related Tips
 
 - [Code Organization](code-organization.md)
 - [Testing Tips](testing-tips.md)

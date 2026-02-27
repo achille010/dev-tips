@@ -2,7 +2,7 @@
 
 Master version control with these quick tips.
 
-## 📖 Available Tips
+##  Available Tips
 
 - [Interactive Rebase](interactive-rebase.md) - Clean up commit history
 - [Commit Message Conventions](commit-message-conventions.md) - Write better commits
@@ -15,7 +15,7 @@ Master version control with these quick tips.
 - [Undo Mistakes](undo-mistakes.md) - Fix Git errors
 - [Gitignore Best Practices](gitignore-best-practices.md) - Ignore files properly
 
-## 🎯 Quick Reference
+##  Quick Reference
 
 **Beginners start here:**
 1. Commit message conventions

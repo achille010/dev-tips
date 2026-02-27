@@ -1,12 +1,12 @@
 # Recursion
 
-## 📖 Definition
+##  Definition
 
 **Recursion** is a programming technique where a function calls itself to solve a smaller version of the same problem. Every recursive solution has:
 1. A **base case** — the simplest version of the problem that can be solved directly
 2. A **recursive case** — breaking the problem down and calling the function on the smaller version
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Recursion elegantly solves problems with self-similar or tree-like structure:
 - Tree/graph traversals
@@ -15,7 +15,7 @@ Recursion elegantly solves problems with self-similar or tree-like structure:
 - Mathematical sequences (Fibonacci, factorial)
 - Backtracking puzzles (sudoku, N-queens)
 
-## 🔍 How It Works
+##  How It Works
 
 ### Call Stack Visualization
 
@@ -35,7 +35,7 @@ factorial(4)
 ### Tail Recursion
 A recursive call is **tail-recursive** if the recursive call is the last operation (no pending multiplication, addition, etc.). Some languages optimize tail recursion to avoid stack overflow.
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Classic Recursion (JavaScript)
 ```javascript
@@ -105,13 +105,13 @@ def solve_n_queens(n):
 print(f"4-Queens has {len(solve_n_queens(4))} solutions")  # 2
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"Recursion is always slower than iteration"** — With memoization (dynamic programming), recursive solutions can match or beat iterative ones. Tail-call optimization makes them equivalent in supporting languages.
 2. **"You'll always hit stack overflow"** — For reasonable input sizes and proper base cases, recursion is safe. Most call stacks support thousands of frames.
 3. **"All recursive problems need multiple recursive calls"** — Linear recursion (one call per step) is the simplest form and very common.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Dynamic Programming](dynamic-programming.md)
 - [Trees and Graphs](../data-structures/trees-and-graphs.md)

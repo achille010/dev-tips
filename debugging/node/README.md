@@ -2,7 +2,7 @@
 
 Common Node.js and npm errors and how to fix them.
 
-## 📖 Available Guides
+##  Available Guides
 
 - [npm Install Errors](npm-install-errors.md)
 - [Port Already in Use](port-already-in-use.md)

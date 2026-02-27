@@ -1,6 +1,6 @@
 # Functional Programming
 
-## 📖 Definition
+##  Definition
 
 **Functional Programming (FP)** is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state or mutable data. Programs are built by composing **pure functions**.
 
@@ -10,7 +10,7 @@ Core principles:
 - **First-class functions** — functions are values that can be passed and returned
 - **Higher-order functions** — functions that take/return functions
 
-## 🎯 Why It Matters
+##  Why It Matters
 
 Functional code is:
 - **Predictable** — pure functions are easy to reason about
@@ -18,7 +18,7 @@ Functional code is:
 - **Parallelizable** — immutable data = no race conditions
 - **Composable** — small functions combine into complex behavior
 
-## 💻 Examples
+##  Examples
 
 ### Example 1: Core FP Concepts (JavaScript)
 ```javascript
@@ -101,13 +101,13 @@ console.log(expensiveCalculation(5));  // 125 (cached!)
 console.log(expensiveCalculation(3));  // Computing for 3... 27
 ```
 
-## ⚠️ Common Misconceptions
+##  Common Misconceptions
 
 1. **"FP means no loops"** — FP favors recursion and higher-order functions over loops, but that's about style, not a hard rule.
 2. **"FP is only for academics"** — React (hooks), Redux, Elm, and Haskell are mainstream FP-influenced tools used in production daily.
 3. **"Pure functions eliminate all side effects"** — Side effects (I/O, network) are necessary. FP isolates side effects rather than eliminating them entirely.
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Object-Oriented Programming](object-oriented-programming.md)
 - [Declarative vs Imperative](declarative-vs-imperative.md)
